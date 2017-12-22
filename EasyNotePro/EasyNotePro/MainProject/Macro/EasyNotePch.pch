@@ -1,0 +1,24 @@
+//
+//  EasyNotePch.pch
+//  EasyNotePro
+//
+//  Created by zhoudongwei on 2017/12/21.
+//  Copyright © 2017年 ZSwift. All rights reserved.
+//
+
+#ifndef EasyNotePch_pch
+#define EasyNotePch_pch
+
+//第三方库
+//#import <FMDB/FMDB.h>
+#import <MJRefresh/MJRefresh.h>
+#import <YYCategories/YYCategories.h>
+
+
+//其他
+#import "SomeValue.h"
+#import "SimpleMore.h"
+
+
+
+#endif /* EasyNotePch_pch */

@@ -7,14 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		225394491FECDAAC00A002C0 /* AccountCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 225394481FECDAAC00A002C0 /* AccountCell.m */; };
+		2253944F1FECE31C00A002C0 /* AccountModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2253944E1FECE31C00A002C0 /* AccountModel.m */; };
 		22FDD3021FEB509A00043B1D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FDD3011FEB509A00043B1D /* AppDelegate.m */; };
-		22FDD3051FEB509A00043B1D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FDD3041FEB509A00043B1D /* ViewController.m */; };
-		22FDD3081FEB509A00043B1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22FDD3061FEB509A00043B1D /* Main.storyboard */; };
 		22FDD30A1FEB509A00043B1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22FDD3091FEB509A00043B1D /* Assets.xcassets */; };
 		22FDD30D1FEB509A00043B1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22FDD30B1FEB509A00043B1D /* LaunchScreen.storyboard */; };
 		22FDD3101FEB509A00043B1D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FDD30F1FEB509A00043B1D /* main.m */; };
 		22FDD31A1FEB509B00043B1D /* EasyNoteProTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FDD3191FEB509B00043B1D /* EasyNoteProTests.m */; };
 		22FDD3251FEB509B00043B1D /* EasyNoteProUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FDD3241FEB509B00043B1D /* EasyNoteProUITests.m */; };
+		22FDD3411FEB562900043B1D /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FDD3391FEB562900043B1D /* BaseView.m */; };
+		22FDD3421FEB562900043B1D /* Base.db in Resources */ = {isa = PBXBuildFile; fileRef = 22FDD33B1FEB562900043B1D /* Base.db */; };
+		22FDD3431FEB562900043B1D /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FDD33C1FEB562900043B1D /* BaseViewController.m */; };
+		22FDD3441FEB562900043B1D /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FDD33D1FEB562900043B1D /* BaseModel.m */; };
+		22FDD3491FEB58E000043B1D /* AppDelegate+Config.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FDD3481FEB58E000043B1D /* AppDelegate+Config.m */; };
+		22FDD3551FEB8E9B00043B1D /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FDD3541FEB8E9B00043B1D /* DataManager.m */; };
+		22FDD3581FEB8FB900043B1D /* MainDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FDD3571FEB8FB900043B1D /* MainDataModel.m */; };
+		22FDD3601FEB92F200043B1D /* AccountVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FDD35F1FEB92F200043B1D /* AccountVC.m */; };
+		22FDD3631FEB930C00043B1D /* AddInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FDD3621FEB930C00043B1D /* AddInfoVC.m */; };
+		22FDD3661FEB931B00043B1D /* NoteVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FDD3651FEB931B00043B1D /* NoteVC.m */; };
+		22FDD3691FEB932B00043B1D /* OtherVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FDD3681FEB932B00043B1D /* OtherVC.m */; };
+		22FDD36C1FEB933D00043B1D /* PersonVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FDD36B1FEB933D00043B1D /* PersonVC.m */; };
+		22FDD36F1FEB98B100043B1D /* AccountView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FDD36E1FEB98B100043B1D /* AccountView.m */; };
+		22FDD3721FEB9C0700043B1D /* PersonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FDD3711FEB9C0700043B1D /* PersonView.m */; };
+		22FDD3761FEB9F2E00043B1D /* gr_bg3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22FDD3741FEB9F2E00043B1D /* gr_bg3x.png */; };
+		22FDD3771FEB9F2E00043B1D /* gr_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22FDD3751FEB9F2E00043B1D /* gr_bg@2x.png */; };
+		CC745A342815EBA3B29C375F /* libPods-EasyNotePro.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E7237B8C26EA556295BE5B3 /* libPods-EasyNotePro.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,12 +52,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		225394471FECDAAC00A002C0 /* AccountCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccountCell.h; sourceTree = "<group>"; };
+		225394481FECDAAC00A002C0 /* AccountCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccountCell.m; sourceTree = "<group>"; };
+		2253944D1FECE31C00A002C0 /* AccountModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccountModel.h; sourceTree = "<group>"; };
+		2253944E1FECE31C00A002C0 /* AccountModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccountModel.m; sourceTree = "<group>"; };
 		22FDD2FD1FEB509A00043B1D /* EasyNotePro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyNotePro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22FDD3001FEB509A00043B1D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		22FDD3011FEB509A00043B1D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		22FDD3031FEB509A00043B1D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		22FDD3041FEB509A00043B1D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		22FDD3071FEB509A00043B1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		22FDD3091FEB509A00043B1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22FDD30C1FEB509A00043B1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22FDD30E1FEB509A00043B1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +69,42 @@
 		22FDD3201FEB509B00043B1D /* EasyNoteProUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyNoteProUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		22FDD3241FEB509B00043B1D /* EasyNoteProUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EasyNoteProUITests.m; sourceTree = "<group>"; };
 		22FDD3261FEB509B00043B1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22FDD3371FEB557600043B1D /* Instructions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Instructions.h; sourceTree = "<group>"; };
+		22FDD3391FEB562900043B1D /* BaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseView.m; sourceTree = "<group>"; };
+		22FDD33B1FEB562900043B1D /* Base.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = Base.db; sourceTree = "<group>"; };
+		22FDD33C1FEB562900043B1D /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		22FDD33D1FEB562900043B1D /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
+		22FDD33E1FEB562900043B1D /* BaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseView.h; sourceTree = "<group>"; };
+		22FDD33F1FEB562900043B1D /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
+		22FDD3401FEB562900043B1D /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		22FDD3461FEB56AB00043B1D /* EasyNotePch.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EasyNotePch.pch; sourceTree = "<group>"; };
+		22FDD3471FEB58E000043B1D /* AppDelegate+Config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Config.h"; sourceTree = "<group>"; };
+		22FDD3481FEB58E000043B1D /* AppDelegate+Config.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Config.m"; sourceTree = "<group>"; };
+		22FDD34A1FEB5AD300043B1D /* SomeValue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SomeValue.h; sourceTree = "<group>"; };
+		22FDD34B1FEB5BDF00043B1D /* SimpleMore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleMore.h; sourceTree = "<group>"; };
+		22FDD3531FEB8E9B00043B1D /* DataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		22FDD3541FEB8E9B00043B1D /* DataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		22FDD3561FEB8FB900043B1D /* MainDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainDataModel.h; sourceTree = "<group>"; };
+		22FDD3571FEB8FB900043B1D /* MainDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainDataModel.m; sourceTree = "<group>"; };
+		22FDD35E1FEB92F200043B1D /* AccountVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccountVC.h; sourceTree = "<group>"; };
+		22FDD35F1FEB92F200043B1D /* AccountVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccountVC.m; sourceTree = "<group>"; };
+		22FDD3611FEB930C00043B1D /* AddInfoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddInfoVC.h; sourceTree = "<group>"; };
+		22FDD3621FEB930C00043B1D /* AddInfoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddInfoVC.m; sourceTree = "<group>"; };
+		22FDD3641FEB931B00043B1D /* NoteVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoteVC.h; sourceTree = "<group>"; };
+		22FDD3651FEB931B00043B1D /* NoteVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NoteVC.m; sourceTree = "<group>"; };
+		22FDD3671FEB932B00043B1D /* OtherVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OtherVC.h; sourceTree = "<group>"; };
+		22FDD3681FEB932B00043B1D /* OtherVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OtherVC.m; sourceTree = "<group>"; };
+		22FDD36A1FEB933D00043B1D /* PersonVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonVC.h; sourceTree = "<group>"; };
+		22FDD36B1FEB933D00043B1D /* PersonVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonVC.m; sourceTree = "<group>"; };
+		22FDD36D1FEB98B100043B1D /* AccountView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccountView.h; sourceTree = "<group>"; };
+		22FDD36E1FEB98B100043B1D /* AccountView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccountView.m; sourceTree = "<group>"; };
+		22FDD3701FEB9C0700043B1D /* PersonView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonView.h; sourceTree = "<group>"; };
+		22FDD3711FEB9C0700043B1D /* PersonView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonView.m; sourceTree = "<group>"; };
+		22FDD3741FEB9F2E00043B1D /* gr_bg3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gr_bg3x.png; sourceTree = "<group>"; };
+		22FDD3751FEB9F2E00043B1D /* gr_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gr_bg@2x.png"; sourceTree = "<group>"; };
+		3E7237B8C26EA556295BE5B3 /* libPods-EasyNotePro.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EasyNotePro.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E5A0C7B7348DE0D23916642 /* Pods-EasyNotePro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyNotePro.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EasyNotePro/Pods-EasyNotePro.debug.xcconfig"; sourceTree = "<group>"; };
+		84FC10A7E8ACA4E829E42888 /* Pods-EasyNotePro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyNotePro.release.xcconfig"; path = "Pods/Target Support Files/Pods-EasyNotePro/Pods-EasyNotePro.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC745A342815EBA3B29C375F /* libPods-EasyNotePro.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +133,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2253944A1FECE2E000A002C0 /* PersonModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PersonModel;
+			sourceTree = "<group>";
+		};
+		2253944B1FECE2E100A002C0 /* OtherModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = OtherModel;
+			sourceTree = "<group>";
+		};
+		2253944C1FECE2E100A002C0 /* AccountModel */ = {
+			isa = PBXGroup;
+			children = (
+				2253944D1FECE31C00A002C0 /* AccountModel.h */,
+				2253944E1FECE31C00A002C0 /* AccountModel.m */,
+			);
+			path = AccountModel;
+			sourceTree = "<group>";
+		};
 		22FDD2F41FEB509A00043B1D = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +163,8 @@
 				22FDD3181FEB509B00043B1D /* EasyNoteProTests */,
 				22FDD3231FEB509B00043B1D /* EasyNoteProUITests */,
 				22FDD2FE1FEB509A00043B1D /* Products */,
+				6F42DC7114EE3E0EFA2DDF13 /* Pods */,
+				6117B188A8C292EE492E2F5A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,9 +183,9 @@
 			children = (
 				22FDD3001FEB509A00043B1D /* AppDelegate.h */,
 				22FDD3011FEB509A00043B1D /* AppDelegate.m */,
-				22FDD3031FEB509A00043B1D /* ViewController.h */,
-				22FDD3041FEB509A00043B1D /* ViewController.m */,
-				22FDD3061FEB509A00043B1D /* Main.storyboard */,
+				22FDD3471FEB58E000043B1D /* AppDelegate+Config.h */,
+				22FDD3481FEB58E000043B1D /* AppDelegate+Config.m */,
+				22FDD3321FEB543500043B1D /* MainProject */,
 				22FDD3091FEB509A00043B1D /* Assets.xcassets */,
 				22FDD30B1FEB509A00043B1D /* LaunchScreen.storyboard */,
 				22FDD30E1FEB509A00043B1D /* Info.plist */,
@@ -132,6 +212,202 @@
 			path = EasyNoteProUITests;
 			sourceTree = "<group>";
 		};
+		22FDD3321FEB543500043B1D /* MainProject */ = {
+			isa = PBXGroup;
+			children = (
+				22FDD3501FEB8E2300043B1D /* CommonUtils */,
+				22FDD34F1FEB8CB200043B1D /* Model */,
+				22FDD3451FEB567A00043B1D /* Macro */,
+				22FDD3381FEB562900043B1D /* Base */,
+				22FDD3331FEB54CB00043B1D /* Instructions(说明) */,
+				22FDD3341FEB54CB00043B1D /* LocalStrings */,
+				22FDD3361FEB54CB00043B1D /* PngResources */,
+				22FDD3351FEB54CB00043B1D /* ViewController */,
+			);
+			path = MainProject;
+			sourceTree = "<group>";
+		};
+		22FDD3331FEB54CB00043B1D /* Instructions(说明) */ = {
+			isa = PBXGroup;
+			children = (
+				22FDD3371FEB557600043B1D /* Instructions.h */,
+			);
+			path = "Instructions(说明)";
+			sourceTree = "<group>";
+		};
+		22FDD3341FEB54CB00043B1D /* LocalStrings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LocalStrings;
+			sourceTree = "<group>";
+		};
+		22FDD3351FEB54CB00043B1D /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				22FDD35A1FEB92D500043B1D /* AccountVC */,
+				22FDD35C1FEB92D500043B1D /* AddInfo */,
+				22FDD35B1FEB92D500043B1D /* Note */,
+				22FDD35D1FEB92D600043B1D /* Other */,
+				22FDD3591FEB92D500043B1D /* PersonCenter */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		22FDD3361FEB54CB00043B1D /* PngResources */ = {
+			isa = PBXGroup;
+			children = (
+				22FDD3731FEB9F1D00043B1D /* Person */,
+			);
+			path = PngResources;
+			sourceTree = "<group>";
+		};
+		22FDD3381FEB562900043B1D /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				22FDD33E1FEB562900043B1D /* BaseView.h */,
+				22FDD3391FEB562900043B1D /* BaseView.m */,
+				22FDD3401FEB562900043B1D /* BaseViewController.h */,
+				22FDD33C1FEB562900043B1D /* BaseViewController.m */,
+				22FDD33F1FEB562900043B1D /* BaseModel.h */,
+				22FDD33D1FEB562900043B1D /* BaseModel.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		22FDD33A1FEB562900043B1D /* BaseData */ = {
+			isa = PBXGroup;
+			children = (
+				22FDD33B1FEB562900043B1D /* Base.db */,
+			);
+			path = BaseData;
+			sourceTree = "<group>";
+		};
+		22FDD3451FEB567A00043B1D /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				22FDD3461FEB56AB00043B1D /* EasyNotePch.pch */,
+				22FDD34B1FEB5BDF00043B1D /* SimpleMore.h */,
+				22FDD34A1FEB5AD300043B1D /* SomeValue.h */,
+			);
+			path = Macro;
+			sourceTree = "<group>";
+		};
+		22FDD34F1FEB8CB200043B1D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				22FDD3561FEB8FB900043B1D /* MainDataModel.h */,
+				22FDD3571FEB8FB900043B1D /* MainDataModel.m */,
+				2253944C1FECE2E100A002C0 /* AccountModel */,
+				2253944B1FECE2E100A002C0 /* OtherModel */,
+				2253944A1FECE2E000A002C0 /* PersonModel */,
+				22FDD33A1FEB562900043B1D /* BaseData */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		22FDD3501FEB8E2300043B1D /* CommonUtils */ = {
+			isa = PBXGroup;
+			children = (
+				22FDD3521FEB8E5700043B1D /* Https */,
+				22FDD3511FEB8E5700043B1D /* LocalData */,
+			);
+			path = CommonUtils;
+			sourceTree = "<group>";
+		};
+		22FDD3511FEB8E5700043B1D /* LocalData */ = {
+			isa = PBXGroup;
+			children = (
+				22FDD3531FEB8E9B00043B1D /* DataManager.h */,
+				22FDD3541FEB8E9B00043B1D /* DataManager.m */,
+			);
+			path = LocalData;
+			sourceTree = "<group>";
+		};
+		22FDD3521FEB8E5700043B1D /* Https */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Https;
+			sourceTree = "<group>";
+		};
+		22FDD3591FEB92D500043B1D /* PersonCenter */ = {
+			isa = PBXGroup;
+			children = (
+				22FDD36A1FEB933D00043B1D /* PersonVC.h */,
+				22FDD36B1FEB933D00043B1D /* PersonVC.m */,
+				22FDD3701FEB9C0700043B1D /* PersonView.h */,
+				22FDD3711FEB9C0700043B1D /* PersonView.m */,
+			);
+			path = PersonCenter;
+			sourceTree = "<group>";
+		};
+		22FDD35A1FEB92D500043B1D /* AccountVC */ = {
+			isa = PBXGroup;
+			children = (
+				22FDD35E1FEB92F200043B1D /* AccountVC.h */,
+				22FDD35F1FEB92F200043B1D /* AccountVC.m */,
+				22FDD36D1FEB98B100043B1D /* AccountView.h */,
+				22FDD36E1FEB98B100043B1D /* AccountView.m */,
+				225394471FECDAAC00A002C0 /* AccountCell.h */,
+				225394481FECDAAC00A002C0 /* AccountCell.m */,
+			);
+			path = AccountVC;
+			sourceTree = "<group>";
+		};
+		22FDD35B1FEB92D500043B1D /* Note */ = {
+			isa = PBXGroup;
+			children = (
+				22FDD3641FEB931B00043B1D /* NoteVC.h */,
+				22FDD3651FEB931B00043B1D /* NoteVC.m */,
+			);
+			path = Note;
+			sourceTree = "<group>";
+		};
+		22FDD35C1FEB92D500043B1D /* AddInfo */ = {
+			isa = PBXGroup;
+			children = (
+				22FDD3611FEB930C00043B1D /* AddInfoVC.h */,
+				22FDD3621FEB930C00043B1D /* AddInfoVC.m */,
+			);
+			path = AddInfo;
+			sourceTree = "<group>";
+		};
+		22FDD35D1FEB92D600043B1D /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				22FDD3671FEB932B00043B1D /* OtherVC.h */,
+				22FDD3681FEB932B00043B1D /* OtherVC.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		22FDD3731FEB9F1D00043B1D /* Person */ = {
+			isa = PBXGroup;
+			children = (
+				22FDD3751FEB9F2E00043B1D /* gr_bg@2x.png */,
+				22FDD3741FEB9F2E00043B1D /* gr_bg3x.png */,
+			);
+			path = Person;
+			sourceTree = "<group>";
+		};
+		6117B188A8C292EE492E2F5A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3E7237B8C26EA556295BE5B3 /* libPods-EasyNotePro.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6F42DC7114EE3E0EFA2DDF13 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5E5A0C7B7348DE0D23916642 /* Pods-EasyNotePro.debug.xcconfig */,
+				84FC10A7E8ACA4E829E42888 /* Pods-EasyNotePro.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +415,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 22FDD3291FEB509B00043B1D /* Build configuration list for PBXNativeTarget "EasyNotePro" */;
 			buildPhases = (
+				792D4400365D92FAA3F50F45 /* [CP] Check Pods Manifest.lock */,
 				22FDD2F91FEB509A00043B1D /* Sources */,
 				22FDD2FA1FEB509A00043B1D /* Frameworks */,
 				22FDD2FB1FEB509A00043B1D /* Resources */,
+				4D34D6D5E2393377D5889062 /* [CP] Embed Pods Frameworks */,
+				2830804397D3C76C06985D5F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -239,8 +518,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				22FDD30D1FEB509A00043B1D /* LaunchScreen.storyboard in Resources */,
+				22FDD3771FEB9F2E00043B1D /* gr_bg@2x.png in Resources */,
 				22FDD30A1FEB509A00043B1D /* Assets.xcassets in Resources */,
-				22FDD3081FEB509A00043B1D /* Main.storyboard in Resources */,
+				22FDD3761FEB9F2E00043B1D /* gr_bg3x.png in Resources */,
+				22FDD3421FEB562900043B1D /* Base.db in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,14 +541,76 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2830804397D3C76C06985D5F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EasyNotePro/Pods-EasyNotePro-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D34D6D5E2393377D5889062 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EasyNotePro/Pods-EasyNotePro-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		792D4400365D92FAA3F50F45 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		22FDD2F91FEB509A00043B1D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22FDD3051FEB509A00043B1D /* ViewController.m in Sources */,
+				22FDD3491FEB58E000043B1D /* AppDelegate+Config.m in Sources */,
+				22FDD3441FEB562900043B1D /* BaseModel.m in Sources */,
+				2253944F1FECE31C00A002C0 /* AccountModel.m in Sources */,
+				22FDD3431FEB562900043B1D /* BaseViewController.m in Sources */,
+				22FDD3631FEB930C00043B1D /* AddInfoVC.m in Sources */,
+				22FDD36F1FEB98B100043B1D /* AccountView.m in Sources */,
+				225394491FECDAAC00A002C0 /* AccountCell.m in Sources */,
+				22FDD3601FEB92F200043B1D /* AccountVC.m in Sources */,
+				22FDD3721FEB9C0700043B1D /* PersonView.m in Sources */,
+				22FDD3661FEB931B00043B1D /* NoteVC.m in Sources */,
 				22FDD3101FEB509A00043B1D /* main.m in Sources */,
+				22FDD3581FEB8FB900043B1D /* MainDataModel.m in Sources */,
+				22FDD3551FEB8E9B00043B1D /* DataManager.m in Sources */,
 				22FDD3021FEB509A00043B1D /* AppDelegate.m in Sources */,
+				22FDD36C1FEB933D00043B1D /* PersonVC.m in Sources */,
+				22FDD3691FEB932B00043B1D /* OtherVC.m in Sources */,
+				22FDD3411FEB562900043B1D /* BaseView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,14 +646,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		22FDD3061FEB509A00043B1D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				22FDD3071FEB509A00043B1D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		22FDD30B1FEB509A00043B1D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -428,29 +763,37 @@
 		};
 		22FDD32A1FEB509B00043B1D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E5A0C7B7348DE0D23916642 /* Pods-EasyNotePro.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6D8PJTK26L;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/zhoudongwei/EastNote/EasyNotePro/EasyNotePro/MainProject/Macro/EasyNotePch.pch;
 				INFOPLIST_FILE = EasyNotePro/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zhou.EasyNotePro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		22FDD32B1FEB509B00043B1D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84FC10A7E8ACA4E829E42888 /* Pods-EasyNotePro.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6D8PJTK26L;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/zhoudongwei/EastNote/EasyNotePro/EasyNotePro/MainProject/Macro/EasyNotePch.pch;
 				INFOPLIST_FILE = EasyNotePro/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zhou.EasyNotePro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

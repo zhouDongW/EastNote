@@ -1,0 +1,6 @@
+platform:ios,'9.0'
+target 'EasyNotePro' do
+pod 'FMDB'
+pod 'MJRefresh'
+pod 'YYCategories'
+end
