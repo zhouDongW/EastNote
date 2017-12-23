@@ -10,6 +10,8 @@
 
 #import "AccountView.h"
 
+#import "AccountModel.h"
+
 @interface AccountVC ()
 {
     
@@ -30,7 +32,8 @@ Strong AccountView *mainView;
     
     self.view = _mainView;
     
-    
+    NSMutableArray *arr = [AccountModel getAllAccountData];
+//    [_mainView configAccountView:arr];
 }
 
 - (void)didReceiveMemoryWarning {

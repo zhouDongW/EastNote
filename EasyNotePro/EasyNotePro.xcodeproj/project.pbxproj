@@ -9,6 +9,18 @@
 /* Begin PBXBuildFile section */
 		225394491FECDAAC00A002C0 /* AccountCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 225394481FECDAAC00A002C0 /* AccountCell.m */; };
 		2253944F1FECE31C00A002C0 /* AccountModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2253944E1FECE31C00A002C0 /* AccountModel.m */; };
+		225394521FECF53200A002C0 /* AddInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 225394511FECF53200A002C0 /* AddInfoView.m */; };
+		225394551FED06FE00A002C0 /* main_acc_ed.png in Resources */ = {isa = PBXBuildFile; fileRef = 225394531FED06FE00A002C0 /* main_acc_ed.png */; };
+		225394561FED06FE00A002C0 /* main_acc.png in Resources */ = {isa = PBXBuildFile; fileRef = 225394541FED06FE00A002C0 /* main_acc.png */; };
+		225394591FED08DD00A002C0 /* main_note.png in Resources */ = {isa = PBXBuildFile; fileRef = 225394571FED08DC00A002C0 /* main_note.png */; };
+		2253945A1FED08DD00A002C0 /* main_note_ed.png in Resources */ = {isa = PBXBuildFile; fileRef = 225394581FED08DC00A002C0 /* main_note_ed.png */; };
+		2253945D1FED08E600A002C0 /* main_other.png in Resources */ = {isa = PBXBuildFile; fileRef = 2253945B1FED08E600A002C0 /* main_other.png */; };
+		2253945E1FED08E600A002C0 /* main_other_ed.png in Resources */ = {isa = PBXBuildFile; fileRef = 2253945C1FED08E600A002C0 /* main_other_ed.png */; };
+		225394611FED08EF00A002C0 /* main_add.png in Resources */ = {isa = PBXBuildFile; fileRef = 2253945F1FED08EF00A002C0 /* main_add.png */; };
+		225394621FED08EF00A002C0 /* main_add_ed.png in Resources */ = {isa = PBXBuildFile; fileRef = 225394601FED08EF00A002C0 /* main_add_ed.png */; };
+		225394651FED08F600A002C0 /* main_per.png in Resources */ = {isa = PBXBuildFile; fileRef = 225394631FED08F600A002C0 /* main_per.png */; };
+		225394661FED08F600A002C0 /* main_per_ed.png in Resources */ = {isa = PBXBuildFile; fileRef = 225394641FED08F600A002C0 /* main_per_ed.png */; };
+		22F1FCA41FEE048A00D771C9 /* CommonUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F1FCA31FEE048A00D771C9 /* CommonUtils.m */; };
 		22FDD3021FEB509A00043B1D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FDD3011FEB509A00043B1D /* AppDelegate.m */; };
 		22FDD30A1FEB509A00043B1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22FDD3091FEB509A00043B1D /* Assets.xcassets */; };
 		22FDD30D1FEB509A00043B1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22FDD30B1FEB509A00043B1D /* LaunchScreen.storyboard */; };
@@ -56,6 +68,20 @@
 		225394481FECDAAC00A002C0 /* AccountCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccountCell.m; sourceTree = "<group>"; };
 		2253944D1FECE31C00A002C0 /* AccountModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccountModel.h; sourceTree = "<group>"; };
 		2253944E1FECE31C00A002C0 /* AccountModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccountModel.m; sourceTree = "<group>"; };
+		225394501FECF53200A002C0 /* AddInfoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddInfoView.h; sourceTree = "<group>"; };
+		225394511FECF53200A002C0 /* AddInfoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddInfoView.m; sourceTree = "<group>"; };
+		225394531FED06FE00A002C0 /* main_acc_ed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main_acc_ed.png; sourceTree = "<group>"; };
+		225394541FED06FE00A002C0 /* main_acc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main_acc.png; sourceTree = "<group>"; };
+		225394571FED08DC00A002C0 /* main_note.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main_note.png; sourceTree = "<group>"; };
+		225394581FED08DC00A002C0 /* main_note_ed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main_note_ed.png; sourceTree = "<group>"; };
+		2253945B1FED08E600A002C0 /* main_other.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main_other.png; sourceTree = "<group>"; };
+		2253945C1FED08E600A002C0 /* main_other_ed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main_other_ed.png; sourceTree = "<group>"; };
+		2253945F1FED08EF00A002C0 /* main_add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main_add.png; sourceTree = "<group>"; };
+		225394601FED08EF00A002C0 /* main_add_ed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main_add_ed.png; sourceTree = "<group>"; };
+		225394631FED08F600A002C0 /* main_per.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main_per.png; sourceTree = "<group>"; };
+		225394641FED08F600A002C0 /* main_per_ed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main_per_ed.png; sourceTree = "<group>"; };
+		22F1FCA21FEE048A00D771C9 /* CommonUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonUtils.h; sourceTree = "<group>"; };
+		22F1FCA31FEE048A00D771C9 /* CommonUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonUtils.m; sourceTree = "<group>"; };
 		22FDD2FD1FEB509A00043B1D /* EasyNotePro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyNotePro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22FDD3001FEB509A00043B1D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		22FDD3011FEB509A00043B1D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -257,6 +283,16 @@
 		22FDD3361FEB54CB00043B1D /* PngResources */ = {
 			isa = PBXGroup;
 			children = (
+				225394531FED06FE00A002C0 /* main_acc_ed.png */,
+				225394541FED06FE00A002C0 /* main_acc.png */,
+				225394581FED08DC00A002C0 /* main_note_ed.png */,
+				225394571FED08DC00A002C0 /* main_note.png */,
+				2253945C1FED08E600A002C0 /* main_other_ed.png */,
+				2253945B1FED08E600A002C0 /* main_other.png */,
+				225394601FED08EF00A002C0 /* main_add_ed.png */,
+				2253945F1FED08EF00A002C0 /* main_add.png */,
+				225394641FED08F600A002C0 /* main_per_ed.png */,
+				225394631FED08F600A002C0 /* main_per.png */,
 				22FDD3731FEB9F1D00043B1D /* Person */,
 			);
 			path = PngResources;
@@ -309,6 +345,8 @@
 		22FDD3501FEB8E2300043B1D /* CommonUtils */ = {
 			isa = PBXGroup;
 			children = (
+				22F1FCA21FEE048A00D771C9 /* CommonUtils.h */,
+				22F1FCA31FEE048A00D771C9 /* CommonUtils.m */,
 				22FDD3521FEB8E5700043B1D /* Https */,
 				22FDD3511FEB8E5700043B1D /* LocalData */,
 			);
@@ -369,6 +407,8 @@
 			children = (
 				22FDD3611FEB930C00043B1D /* AddInfoVC.h */,
 				22FDD3621FEB930C00043B1D /* AddInfoVC.m */,
+				225394501FECF53200A002C0 /* AddInfoView.h */,
+				225394511FECF53200A002C0 /* AddInfoView.m */,
 			);
 			path = AddInfo;
 			sourceTree = "<group>";
@@ -517,11 +557,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				225394611FED08EF00A002C0 /* main_add.png in Resources */,
+				2253945A1FED08DD00A002C0 /* main_note_ed.png in Resources */,
+				225394621FED08EF00A002C0 /* main_add_ed.png in Resources */,
+				225394561FED06FE00A002C0 /* main_acc.png in Resources */,
 				22FDD30D1FEB509A00043B1D /* LaunchScreen.storyboard in Resources */,
+				2253945E1FED08E600A002C0 /* main_other_ed.png in Resources */,
+				225394591FED08DD00A002C0 /* main_note.png in Resources */,
 				22FDD3771FEB9F2E00043B1D /* gr_bg@2x.png in Resources */,
 				22FDD30A1FEB509A00043B1D /* Assets.xcassets in Resources */,
+				225394661FED08F600A002C0 /* main_per_ed.png in Resources */,
 				22FDD3761FEB9F2E00043B1D /* gr_bg3x.png in Resources */,
+				225394651FED08F600A002C0 /* main_per.png in Resources */,
 				22FDD3421FEB562900043B1D /* Base.db in Resources */,
+				225394551FED06FE00A002C0 /* main_acc_ed.png in Resources */,
+				2253945D1FED08E600A002C0 /* main_other.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -599,6 +649,7 @@
 				2253944F1FECE31C00A002C0 /* AccountModel.m in Sources */,
 				22FDD3431FEB562900043B1D /* BaseViewController.m in Sources */,
 				22FDD3631FEB930C00043B1D /* AddInfoVC.m in Sources */,
+				22F1FCA41FEE048A00D771C9 /* CommonUtils.m in Sources */,
 				22FDD36F1FEB98B100043B1D /* AccountView.m in Sources */,
 				225394491FECDAAC00A002C0 /* AccountCell.m in Sources */,
 				22FDD3601FEB92F200043B1D /* AccountVC.m in Sources */,
@@ -610,6 +661,7 @@
 				22FDD3021FEB509A00043B1D /* AppDelegate.m in Sources */,
 				22FDD36C1FEB933D00043B1D /* PersonVC.m in Sources */,
 				22FDD3691FEB932B00043B1D /* OtherVC.m in Sources */,
+				225394521FECF53200A002C0 /* AddInfoView.m in Sources */,
 				22FDD3411FEB562900043B1D /* BaseView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

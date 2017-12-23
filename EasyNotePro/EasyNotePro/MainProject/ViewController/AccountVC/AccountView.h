@@ -10,4 +10,5 @@
 
 @interface AccountView : BaseView
 
+- (void)configAccountView:(NSMutableArray *)mainDataArr;
 @end

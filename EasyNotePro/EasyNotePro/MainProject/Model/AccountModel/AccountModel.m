@@ -37,14 +37,21 @@
     __block BOOL rlt = NO;
     FMDatabaseQueue *queue = [self.class sharedQueue];
     [queue inDatabase:^(FMDatabase * _Nonnull db) {
-        rlt = [db executeQuery:@"insert into AccountTable(accountId,type,title,account,password,descript) value(?,?,?,?,?,?)",
-                                  account.accountId,
-                                  account.type,
-                                  account.title,
-                                  account.account,
-                                  account.password,
-                                  account.descript
-                                  ];
+//        rlt = [db executeQuery:@"insert into AccountTable(accountId,type,title,account,password,descript) values(?,?,?,?,?,?)",
+//                                  account.accountId,
+//                                  account.type,
+//                                  account.title,
+//                                  account.account,
+//                                  account.password,
+//                                  account.descript
+//                                  ];
+        rlt = [db executeUpdate:@"replace into AccountTable(accountId,type,title,account,password,descript) values(?,?,?,?,?,?)",
+               account.accountId,
+               account.type,
+               account.title,
+               account.account,
+               account.password,
+               account.descript];
     }];
     return rlt;
 }

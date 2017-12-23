@@ -44,28 +44,28 @@
     
     AccountVC *accountVC = [[AccountVC alloc] init];
     accountVC.tabBarItem.title = @"账号";
-    accountVC.tabBarItem.image = IMAGEBYENAME(@"");
-    accountVC.tabBarItem.selectedImage = IMAGEBYENAME(@"");
+    accountVC.tabBarItem.image = IMAGEBYENAME(@"main_acc");
+    accountVC.tabBarItem.selectedImage = IMAGEBYENAME(@"main_acc_ed");
     
     AddInfoVC *addVC = [[AddInfoVC alloc] init];
     addVC.tabBarItem.title = @"添加";
-    addVC.tabBarItem.image = IMAGEBYENAME(@"");
-    addVC.tabBarItem.selectedImage = IMAGEBYENAME(@"");
+    addVC.tabBarItem.image = IMAGEBYENAME(@"main_add");
+    addVC.tabBarItem.selectedImage = IMAGEBYENAME(@"main_add_ed");
     
     NoteVC *noteVC = [[NoteVC alloc] init];
     noteVC.tabBarItem.title = @"随记";
-    noteVC.tabBarItem.image = IMAGEBYENAME(@"");
-    noteVC.tabBarItem.selectedImage = IMAGEBYENAME(@"");
+    noteVC.tabBarItem.image = IMAGEBYENAME(@"main_note");
+    noteVC.tabBarItem.selectedImage = IMAGEBYENAME(@"main_note_ed");
     
     OtherVC *otherVC = [[OtherVC alloc] init];
     otherVC.tabBarItem.title = @"其他";
-    otherVC.tabBarItem.image = IMAGEBYENAME(@"");
-    otherVC.tabBarItem.selectedImage = IMAGEBYENAME(@"");
+    otherVC.tabBarItem.image = IMAGEBYENAME(@"main_other");
+    otherVC.tabBarItem.selectedImage = IMAGEBYENAME(@"main_other_ed");
     
     PersonVC *personVC = [[PersonVC alloc] init];
     personVC.tabBarItem.title = @"个人";
-    personVC.tabBarItem.image = IMAGEBYENAME(@"");
-    personVC.tabBarItem.selectedImage = IMAGEBYENAME(@"");
+    personVC.tabBarItem.image = IMAGEBYENAME(@"main_per");
+    personVC.tabBarItem.selectedImage = IMAGEBYENAME(@"main_per_ed");
     
     UINavigationController *acNaviVC = [[UINavigationController alloc] initWithRootViewController:accountVC];
     UINavigationController *adNaviVC = [[UINavigationController alloc] initWithRootViewController:addVC];
@@ -79,8 +79,7 @@
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
-    // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-    // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
+
 }
 
 

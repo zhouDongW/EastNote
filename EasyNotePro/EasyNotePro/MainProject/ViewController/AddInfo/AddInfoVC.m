@@ -8,30 +8,60 @@
 
 #import "AddInfoVC.h"
 
-@interface AddInfoVC ()
+#import "AddInfoView.h"
 
+#import "AccountModel.h"
+@interface AddInfoVC ()
+{
+    
+}
+
+Strong AddInfoView *addView;
 @end
 
 @implementation AddInfoVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    self.title = @"账号添加";
+    [self leftButtonSetImage:nil];
+    
+    _addView = [[AddInfoView alloc] init];
+    self.view = _addView;
+    
+    AccountTable *accountM = InitObject(AccountTable);
+    
+    __weak typeof(self) weakSelf = self;
+    self.addView.block_AccountInfo = ^(NSString *title, NSString *type, NSString *account, NSString *password, NSString *descript){
+        accountM.title = title;
+        //accountM.type = type;
+        accountM.account = account;
+        accountM.password = password;
+        accountM.descript = descript;
+        //时间戳当id
+        accountM.accountId = [CommonUtils createTimestamp];
+        
+        BOOL save = [AccountModel addAccountInfo:accountM];
+        if (save) {
+            //save succeed
+            
+            weakSelf.tabBarController.selectedIndex = 0;
+        }
+        else
+        {
+            //save error
+        }
+     };
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

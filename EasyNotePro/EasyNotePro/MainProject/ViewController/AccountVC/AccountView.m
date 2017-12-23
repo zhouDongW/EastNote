@@ -7,12 +7,13 @@
 //
 
 #import "AccountView.h"
-
 #import "AccountCell.h"
+
+#import "AccountModel.h"
 
 @interface AccountView()<UITableViewDelegate,UITableViewDataSource>
 {
-    
+    NSMutableArray *dataArr;
 }
 Strong UITableView *tableView;
 
@@ -24,6 +25,7 @@ Strong UITableView *tableView;
 {
     self = [super init];
     if (self) {
+        dataArr = [[NSMutableArray alloc] init];
         
         [self initTableView];
     }
@@ -44,6 +46,12 @@ Strong UITableView *tableView;
     
 }
 
+- (void)configAccountView:(NSMutableArray *)mainDataArr
+{
+    dataArr = mainDataArr;
+    [self.tableView reloadData];
+}
+
 #pragma mark Delegate
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
@@ -52,7 +60,7 @@ Strong UITableView *tableView;
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 5;
+    return [dataArr count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -65,6 +73,9 @@ Strong UITableView *tableView;
         cell =[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle
                                     reuseIdentifier:cellid];
     }
+    AccountTable *model = [[AccountTable alloc] init];
+    model = [dataArr objectAtIndex:indexPath.row];
+    cell.textLabel.text = model.title;
     
     return cell;
 }

@@ -15,6 +15,7 @@
 //tag值
 #define tagBack 1000   //左按钮为返回状态   BaseVC中设置
 
+#define textfieldTag 1001 //AddInfoView (1001~1005)
 
 //颜色
 #define mianBlue [UIColor colorWithHexString:@"#87CEFA"]  //天蓝色
