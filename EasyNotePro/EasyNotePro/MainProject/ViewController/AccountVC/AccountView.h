@@ -8,7 +8,15 @@
 
 #import "BaseView.h"
 
+typedef void(^pushBlock)(NSInteger index);
+typedef void(^refreshBlock)(void);
 @interface AccountView : BaseView
+{
+    
+}
+Strong UITableView *tableView;
 
+Copy pushBlock pBlock;
+Copy refreshBlock reBlock;
 - (void)configAccountView:(NSMutableArray *)mainDataArr;
 @end

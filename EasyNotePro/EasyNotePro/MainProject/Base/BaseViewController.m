@@ -28,6 +28,12 @@
     [super didReceiveMemoryWarning];
     
 }
+//跳转隐藏底部tabar
+- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
+{
+    viewController.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:viewController animated:animated];
+}
 
 #pragma mark 自定义事件
 - (void)leftButtonSetImage:(NSString *)imageName

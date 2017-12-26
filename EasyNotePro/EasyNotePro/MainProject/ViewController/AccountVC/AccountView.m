@@ -15,7 +15,7 @@
 {
     NSMutableArray *dataArr;
 }
-Strong UITableView *tableView;
+
 
 @end
 
@@ -37,10 +37,10 @@ Strong UITableView *tableView;
     self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight) style:UITableViewStyleGrouped];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
-    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    //self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.tableView.showsVerticalScrollIndicator = NO;
-    self.tableView.scrollEnabled = NO;
-    self.tableView.allowsSelection = NO;
+//    self.tableView.scrollEnabled = NO;
+    //self.tableView.allowsSelection = NO;
     self.tableView.sectionHeaderHeight = SizeFrom750(1);
     [self addSubview:self.tableView];
     
@@ -50,6 +50,7 @@ Strong UITableView *tableView;
 {
     dataArr = mainDataArr;
     [self.tableView reloadData];
+    
 }
 
 #pragma mark Delegate
@@ -92,7 +93,9 @@ Strong UITableView *tableView;
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
+    if (_pBlock) {
+        self.pBlock(indexPath.row);
+    }
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath

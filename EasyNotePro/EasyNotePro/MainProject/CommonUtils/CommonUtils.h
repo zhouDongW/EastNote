@@ -17,6 +17,7 @@
 //生成时间戳
 +(NSString *)createTimestamp;
 
-
+//为键盘添加完成栏
++ (UIView *)keyboardToolBar;
 
 @end

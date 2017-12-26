@@ -27,6 +27,7 @@ Strong PersonView *mainView;
     _mainView.frame = CGRectMake(0, 0, ScreenWidth, ScreenHeight);
     self.view = _mainView;
     
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated

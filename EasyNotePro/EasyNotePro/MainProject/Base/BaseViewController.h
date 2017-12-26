@@ -24,6 +24,9 @@
 //左按钮点击事件 一般为返回事件
 - (void)goBackAction:(UIButton *)sender;
 
+//跳转隐藏底部tabar
+- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated;
+
 //判断wifi名称
 - (NSString *)getWifiName;
 //数据解析

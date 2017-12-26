@@ -7,6 +7,7 @@
 //
 
 #import "AccountVC.h"
+#import "AddInfoVC.h"
 
 #import "AccountView.h"
 
@@ -14,7 +15,7 @@
 
 @interface AccountVC ()
 {
-    
+    NSMutableArray *dbGetArr;
 }
 
 Strong AccountView *mainView;
@@ -29,11 +30,38 @@ Strong AccountView *mainView;
     
     _mainView = [[AccountView alloc] init];
     _mainView.frame = CGRectMake(0, 0, ScreenWidth, ScreenHeight);
-    
     self.view = _mainView;
     
-    NSMutableArray *arr = [AccountModel getAllAccountData];
-//    [_mainView configAccountView:arr];
+//    _mainView.tableView.mj_header = [MJRefreshHeader headerWithRefreshingBlock:^{
+//
+//    }];
+    __weak typeof(self) weakSelf = self;
+    _mainView.tableView.mj_header= [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            dbGetArr = [AccountModel getAllAccountData];
+            [weakSelf.mainView configAccountView:dbGetArr];
+            
+            [_mainView.tableView.mj_header endRefreshing];
+        });
+        
+    }];
+    
+    
+    dbGetArr = [AccountModel getAllAccountData];
+    [_mainView configAccountView:dbGetArr];
+    
+    _mainView.pBlock = ^(NSInteger index){
+        AddInfoVC *avc = InitObject(AddInfoVC);
+        avc.isShowAccount = YES;
+        avc.accountData = [dbGetArr objectAtIndex:index];
+        [weakSelf pushViewController:avc animated:YES];
+    };
+//    _mainView.reBlock = ^{
+//        NSMutableArray *arr = [AccountModel getAllAccountData];
+//        [weakSelf.mainView configAccountView:arr];
+//    };
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -44,6 +72,11 @@ Strong AccountView *mainView;
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+    
+    MJRefreshHeader *header = [MJRefreshHeader headerWithRefreshingBlock:^{
+        dbGetArr = [AccountModel getAllAccountData];
+        [_mainView configAccountView:dbGetArr];
+    }];
 }
 
 - (void)viewWillDisappear:(BOOL)animated

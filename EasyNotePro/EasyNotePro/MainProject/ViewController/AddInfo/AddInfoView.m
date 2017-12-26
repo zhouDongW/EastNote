@@ -12,6 +12,7 @@
 {
     NSArray *titleArr;
     NSArray *placeHolderArr;    //palceholder内容
+    NSArray *valueArr;
     
     NSString *titleStr;
     NSString *typeStr;
@@ -53,18 +54,70 @@ Strong UITableView *tableView;
 
 - (void)saveAccountInfo
 {
-    //输入提示判断
-    if (titleStr && typeStr && accountStr && passwordStr && descriptStr) {
-        //传值
-        if (self.block_AccountInfo) {
-            self.block_AccountInfo(titleStr, typeStr, accountStr, passwordStr, descriptStr);
+
+    if (_isSaveUpdate) { //更新数据
+        //输入提示判断
+        if (titleStr && typeStr && accountStr && passwordStr && descriptStr) {
+            //传值
+            if (self.block_update) {
+                self.block_update(_accid,titleStr, typeStr, accountStr, passwordStr, descriptStr);
+            }
+        }
+        else
+        {
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"tip" message:@"somevalue nil" delegate:self cancelButtonTitle:@"yes" otherButtonTitles:nil];
+            [alert show];
         }
     }
     else
     {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"tip" message:@"somevalue nil" delegate:self cancelButtonTitle:@"yes" otherButtonTitles:nil];
-        [alert show];
+        //输入提示判断
+        if (titleStr && typeStr && accountStr && passwordStr && descriptStr) {
+            //传值
+            if (self.block_AccountInfo) {
+                self.block_AccountInfo(titleStr, typeStr, accountStr, passwordStr, descriptStr);
+            }
+        }
+        else
+        {
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"tip" message:@"somevalue nil" delegate:self cancelButtonTitle:@"yes" otherButtonTitles:nil];
+            [alert show];
+        }
     }
+}
+
+- (void)configTextField:(AccountTable *)model
+{
+    if (model.title  && model.account && model.password && model.descript) {
+        NSString *typeStr = [NSString stringWithFormat:@"%ld",(long)model.type];
+        valueArr = @[model.title,@"0",model.account,model.password,model.descript];
+    }
+    
+}
+
+- (void)changeTextFieldEdit
+{
+    [_tableView reloadData];
+}
+
+- (UIView *)keyboardToolBar
+{
+    UIView *view = InitObject(UIView);
+    view.frame = CGRectMake(0, 0, ScreenWidth, 40);
+    view.backgroundColor = [UIColor grayColor];
+    
+    UIButton *btn = InitObject(UIButton);
+    btn.frame = CGRectMake(ScreenWidth - 60, 5, 60, 30);
+    [btn setTitle:@"完成" forState:UIControlStateNormal];
+    [btn addTarget:self action:@selector(textWithOut) forControlEvents:UIControlEventTouchUpInside];
+    [view addSubview:btn];
+    
+    return view;
+}
+
+- (void)textWithOut
+{
+    [self endEditing:YES];
 }
 
 #pragma mark Delegate
@@ -98,7 +151,25 @@ Strong UITableView *tableView;
     textfield.delegate = self;
     textfield.placeholder = [placeHolderArr objectAtIndex:indexPath.row];
     [cell.contentView addSubview:textfield];
+    if ([valueArr count] == 5) {
+        textfield.text = [valueArr objectAtIndex:indexPath.row];
+        //textfield.userInteractionEnabled = NO;
+        //textfield.borderStyle = UITextBorderStyleNone;
+        
+        titleStr = [valueArr objectAtIndex:0];
+        typeStr = [valueArr objectAtIndex:1];
+        accountStr = [valueArr objectAtIndex:2];
+        passwordStr = [valueArr objectAtIndex:3];
+        descriptStr = [valueArr objectAtIndex:4];
+    }
     
+    if (_isCanEdit == YES) {
+        textfield.userInteractionEnabled = YES;
+    }
+    else
+    {
+        textfield.userInteractionEnabled = NO;
+    }
     return cell;
 }
 
@@ -148,6 +219,7 @@ Strong UITableView *tableView;
 {
     NSInteger tag = textField.tag;
     NSString *newStr = nil;
+    
     switch (tag) {
         case 1001:
         {
@@ -185,4 +257,11 @@ Strong UITableView *tableView;
     }
     return YES;
 }
+
+- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField
+{
+    textField.inputAccessoryView = [self keyboardToolBar];
+    return YES;
+}
+
 @end

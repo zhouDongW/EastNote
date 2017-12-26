@@ -51,7 +51,7 @@ Strong UITableView *tableView;
 {
     self.scroll = [[UIScrollView alloc] init];
     self.scroll.frame = CGRectMake(0, 5, ScreenWidth - 10, ScreenHeight - 44 -64);
-    self.scroll.contentSize = CGSizeMake(ScreenWidth, 750);
+    self.scroll.contentSize = CGSizeMake(ScreenWidth, ScreenHeight - 44 -64 + SizeFrom750(505) -30);
     self.scroll.userInteractionEnabled = YES;
     self.scroll.showsVerticalScrollIndicator = YES;  //垂直滚动条
     self.scroll.showsHorizontalScrollIndicator = NO; //水平滚动条
@@ -61,7 +61,7 @@ Strong UITableView *tableView;
     self.scroll.backgroundColor = [UIColor clearColor];
     [self addSubview:_scroll];
     
-    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(5, SizeFrom750(505)-30, ScreenWidth - 10, HEIGHT(_scroll)) style:UITableViewStyleGrouped];
+    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(5, SizeFrom750(505)-30, ScreenWidth - 10, ScreenHeight - 64 -44) style:UITableViewStyleGrouped];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     //self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;

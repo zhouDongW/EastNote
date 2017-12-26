@@ -8,6 +8,11 @@
 
 #import "BaseViewController.h"
 
-@interface AddInfoVC : BaseViewController
+#import "AccountModel.h"
 
+@interface AddInfoVC : BaseViewController
+//yes 为accountVC跳转过来，textfield不可修改
+Assign BOOL isShowAccount;
+
+Strong AccountTable *accountData;
 @end

@@ -47,7 +47,7 @@
 //                                  ];
         rlt = [db executeUpdate:@"replace into AccountTable(accountId,type,title,account,password,descript) values(?,?,?,?,?,?)",
                account.accountId,
-               account.type,
+               @0,
                account.title,
                account.account,
                account.password,
@@ -74,7 +74,7 @@
     [queue inDatabase:^(FMDatabase * _Nonnull db) {
         rlt = [db executeUpdate:@"update accountTable set account = ?,type = ?, title = ?,password = ?, descript = ? where accountId = ?",
                account.account,
-               account.type,
+               @0,
                account.title,
                account.password,
                account.descript,

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		221ED8D41FF223F700D9540E /* TextFieldWithBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 221ED8D31FF223F700D9540E /* TextFieldWithBtn.m */; };
 		225394491FECDAAC00A002C0 /* AccountCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 225394481FECDAAC00A002C0 /* AccountCell.m */; };
 		2253944F1FECE31C00A002C0 /* AccountModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2253944E1FECE31C00A002C0 /* AccountModel.m */; };
 		225394521FECF53200A002C0 /* AddInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 225394511FECF53200A002C0 /* AddInfoView.m */; };
@@ -20,6 +21,7 @@
 		225394621FED08EF00A002C0 /* main_add_ed.png in Resources */ = {isa = PBXBuildFile; fileRef = 225394601FED08EF00A002C0 /* main_add_ed.png */; };
 		225394651FED08F600A002C0 /* main_per.png in Resources */ = {isa = PBXBuildFile; fileRef = 225394631FED08F600A002C0 /* main_per.png */; };
 		225394661FED08F600A002C0 /* main_per_ed.png in Resources */ = {isa = PBXBuildFile; fileRef = 225394641FED08F600A002C0 /* main_per_ed.png */; };
+		22E57D7C1FF0F5EE001E6A0C /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 22E57D7B1FF0F5ED001E6A0C /* back.png */; };
 		22F1FCA41FEE048A00D771C9 /* CommonUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F1FCA31FEE048A00D771C9 /* CommonUtils.m */; };
 		22FDD3021FEB509A00043B1D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FDD3011FEB509A00043B1D /* AppDelegate.m */; };
 		22FDD30A1FEB509A00043B1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22FDD3091FEB509A00043B1D /* Assets.xcassets */; };
@@ -64,6 +66,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		221ED8D21FF223F700D9540E /* TextFieldWithBtn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextFieldWithBtn.h; sourceTree = "<group>"; };
+		221ED8D31FF223F700D9540E /* TextFieldWithBtn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextFieldWithBtn.m; sourceTree = "<group>"; };
 		225394471FECDAAC00A002C0 /* AccountCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccountCell.h; sourceTree = "<group>"; };
 		225394481FECDAAC00A002C0 /* AccountCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccountCell.m; sourceTree = "<group>"; };
 		2253944D1FECE31C00A002C0 /* AccountModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccountModel.h; sourceTree = "<group>"; };
@@ -80,6 +84,7 @@
 		225394601FED08EF00A002C0 /* main_add_ed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main_add_ed.png; sourceTree = "<group>"; };
 		225394631FED08F600A002C0 /* main_per.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main_per.png; sourceTree = "<group>"; };
 		225394641FED08F600A002C0 /* main_per_ed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main_per_ed.png; sourceTree = "<group>"; };
+		22E57D7B1FF0F5ED001E6A0C /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
 		22F1FCA21FEE048A00D771C9 /* CommonUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonUtils.h; sourceTree = "<group>"; };
 		22F1FCA31FEE048A00D771C9 /* CommonUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonUtils.m; sourceTree = "<group>"; };
 		22FDD2FD1FEB509A00043B1D /* EasyNotePro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyNotePro.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -159,6 +164,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		221ED8D11FF223A200D9540E /* CommonUIClass */ = {
+			isa = PBXGroup;
+			children = (
+				221ED8D21FF223F700D9540E /* TextFieldWithBtn.h */,
+				221ED8D31FF223F700D9540E /* TextFieldWithBtn.m */,
+			);
+			path = CommonUIClass;
+			sourceTree = "<group>";
+		};
 		2253944A1FECE2E000A002C0 /* PersonModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -241,6 +255,7 @@
 		22FDD3321FEB543500043B1D /* MainProject */ = {
 			isa = PBXGroup;
 			children = (
+				221ED8D11FF223A200D9540E /* CommonUIClass */,
 				22FDD3501FEB8E2300043B1D /* CommonUtils */,
 				22FDD34F1FEB8CB200043B1D /* Model */,
 				22FDD3451FEB567A00043B1D /* Macro */,
@@ -293,6 +308,7 @@
 				2253945F1FED08EF00A002C0 /* main_add.png */,
 				225394641FED08F600A002C0 /* main_per_ed.png */,
 				225394631FED08F600A002C0 /* main_per.png */,
+				22E57D7B1FF0F5ED001E6A0C /* back.png */,
 				22FDD3731FEB9F1D00043B1D /* Person */,
 			);
 			path = PngResources;
@@ -569,6 +585,7 @@
 				225394661FED08F600A002C0 /* main_per_ed.png in Resources */,
 				22FDD3761FEB9F2E00043B1D /* gr_bg3x.png in Resources */,
 				225394651FED08F600A002C0 /* main_per.png in Resources */,
+				22E57D7C1FF0F5EE001E6A0C /* back.png in Resources */,
 				22FDD3421FEB562900043B1D /* Base.db in Resources */,
 				225394551FED06FE00A002C0 /* main_acc_ed.png in Resources */,
 				2253945D1FED08E600A002C0 /* main_other.png in Resources */,
@@ -658,6 +675,7 @@
 				22FDD3101FEB509A00043B1D /* main.m in Sources */,
 				22FDD3581FEB8FB900043B1D /* MainDataModel.m in Sources */,
 				22FDD3551FEB8E9B00043B1D /* DataManager.m in Sources */,
+				221ED8D41FF223F700D9540E /* TextFieldWithBtn.m in Sources */,
 				22FDD3021FEB509A00043B1D /* AppDelegate.m in Sources */,
 				22FDD36C1FEB933D00043B1D /* PersonVC.m in Sources */,
 				22FDD3691FEB932B00043B1D /* OtherVC.m in Sources */,
