@@ -32,9 +32,6 @@ Strong AccountView *mainView;
     _mainView.frame = CGRectMake(0, 0, ScreenWidth, ScreenHeight);
     self.view = _mainView;
     
-//    _mainView.tableView.mj_header = [MJRefreshHeader headerWithRefreshingBlock:^{
-//
-//    }];
     __weak typeof(self) weakSelf = self;
     _mainView.tableView.mj_header= [MJRefreshNormalHeader headerWithRefreshingBlock:^{
         
@@ -57,10 +54,17 @@ Strong AccountView *mainView;
         avc.accountData = [dbGetArr objectAtIndex:index];
         [weakSelf pushViewController:avc animated:YES];
     };
-//    _mainView.reBlock = ^{
-//        NSMutableArray *arr = [AccountModel getAllAccountData];
-//        [weakSelf.mainView configAccountView:arr];
-//    };
+    
+    _mainView.deBlock = ^(NSString *accountid) {
+        BOOL del = [AccountModel delAccountInfo:accountid];
+        if (del) {
+            //
+        }
+        else
+        {
+            
+        }
+    };
     
 }
 

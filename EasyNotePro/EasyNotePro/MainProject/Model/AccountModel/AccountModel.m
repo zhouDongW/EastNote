@@ -61,7 +61,7 @@
     __block BOOL rlt = NO;
     FMDatabaseQueue *queue = [self.class sharedQueue];
     [queue inDatabase:^(FMDatabase * _Nonnull db) {
-        rlt = [db executeQuery:@"delete from AccountTable where accountId = ?",accountid];
+        rlt = [db executeUpdate:@"delete from AccountTable where accountId = ?",accountid];
     }];
     return rlt;
     

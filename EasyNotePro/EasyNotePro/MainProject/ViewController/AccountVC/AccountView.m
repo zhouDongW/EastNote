@@ -71,7 +71,7 @@
     
     if (cell == nil)
     {
-        cell =[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle
                                     reuseIdentifier:cellid];
     }
     AccountTable *model = [[AccountTable alloc] init];
@@ -113,4 +113,31 @@
 //
 //}
 
+//左划删除
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return YES;
+}
+
+- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return UITableViewCellEditingStyleDelete;
+}
+- (nullable NSString *)tableView:(UITableView *)tableView titleForDeleteConfirmationButtonForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return  @"删除";
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    AccountTable *deModel = [dataArr objectAtIndex:indexPath.row];
+    [dataArr removeObjectAtIndex:indexPath.row];
+    //删除本地数据
+    
+    if (self.deBlock) {
+        self.deBlock(deModel.accountId);
+    }
+    
+    [tableView deleteRowAtIndexPath:indexPath withRowAnimation:UITableViewRowAnimationFade];
+}
 @end
