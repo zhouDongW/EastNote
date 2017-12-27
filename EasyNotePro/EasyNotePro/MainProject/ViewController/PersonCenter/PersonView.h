@@ -8,6 +8,12 @@
 
 #import "BaseView.h"
 
+typedef void(^selectBlock)(void);
 @interface PersonView : BaseView
+{
+    
+}
+Strong UIImageView *iconImg;
 
+Copy selectBlock seBlock;
 @end

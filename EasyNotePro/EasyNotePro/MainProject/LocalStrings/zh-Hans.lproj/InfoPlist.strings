@@ -1,0 +1,13 @@
+/* 
+  InfoPlist.strings
+  EasyNotePro
+
+  Created by zhoudongwei on 2017/12/27.
+  Copyright © 2017年 ZSwift. All rights reserved.
+*/
+
+NSCameraUsageDescription = "用于打开相机";
+NSContactsUsageDescription = "用于打开联系人";
+NSLocationWhenInUseUsageDescription = "用于打开定位确定您位置信息";
+NSMicrophoneUsageDescription = "用于打开耳机";
+NSPhotoLibraryUsageDescription = "用于打开相册去读写图片视频文件";

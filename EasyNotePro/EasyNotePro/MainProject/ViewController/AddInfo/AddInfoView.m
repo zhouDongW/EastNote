@@ -190,6 +190,15 @@ Strong UITableView *tableView;
     [saveBtn addTarget:self action:@selector(saveAccountInfo) forControlEvents:UIControlEventTouchUpInside];
     [view addSubview:saveBtn];
     
+    if (_isCanEdit) {
+        saveBtn.userInteractionEnabled = YES;
+        [saveBtn setBackgroundColor:mianBlue];
+    }
+    else
+    {
+        saveBtn.userInteractionEnabled = NO;
+        [saveBtn setBackgroundColor:[UIColor grayColor]];
+    }
     return view;
 
 }

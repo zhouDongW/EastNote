@@ -59,10 +59,13 @@ Strong AccountView *mainView;
         BOOL del = [AccountModel delAccountInfo:accountid];
         if (del) {
             //
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"tip" message:@"delete succees" delegate:self cancelButtonTitle:@"sure" otherButtonTitles:nil, nil];
+            [alert show];
         }
         else
         {
-            
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"tip" message:@"fail to delete" delegate:self cancelButtonTitle:@"sure" otherButtonTitles:nil, nil];
+            [alert show];
         }
     };
     
@@ -77,10 +80,10 @@ Strong AccountView *mainView;
 {
     [super viewWillAppear:animated];
     
-    MJRefreshHeader *header = [MJRefreshHeader headerWithRefreshingBlock:^{
-        dbGetArr = [AccountModel getAllAccountData];
-        [_mainView configAccountView:dbGetArr];
-    }];
+//    MJRefreshHeader *header = [MJRefreshHeader headerWithRefreshingBlock:^{
+//        dbGetArr = [AccountModel getAllAccountData];
+//        [_mainView configAccountView:dbGetArr];
+//    }];
 }
 
 - (void)viewWillDisappear:(BOOL)animated

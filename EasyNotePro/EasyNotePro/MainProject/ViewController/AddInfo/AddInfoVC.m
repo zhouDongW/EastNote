@@ -31,6 +31,7 @@ Strong AddInfoView *addView;
     if (_isShowAccount) {
         [self rightBtnWithText:@"编辑"];
         isEdit = NO;
+        self.title = @"账号信息查看";
     }
     
     _addView = [[AddInfoView alloc] init];

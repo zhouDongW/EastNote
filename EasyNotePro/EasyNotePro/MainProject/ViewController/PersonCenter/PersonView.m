@@ -7,13 +7,15 @@
 //
 
 #import "PersonView.h"
+#import "PersonCell.h"
+
 @interface PersonView()<UITableViewDelegate,UITableViewDataSource,UIScrollViewDelegate>
 {
     NSArray *cellArr;
+    NSArray *cellIconArr;
     
 }
 Strong UIImageView *topBg;
-Strong UIImageView *iconImg;
 Strong UIScrollView *scroll;
 Strong UITableView *tableView;
 
@@ -25,8 +27,8 @@ Strong UITableView *tableView;
 {
     self = [super init];
     if (self) {
-        cellArr = @[@"1",@"2",@"3",@"4",@"5",@"6",@"7"];
-        
+        cellArr = @[@"我的信息",@"修改密码",@"销毁数据",@"其他"];
+        cellIconArr = @[@"p_info",@"P_pw",@"p_clear",@"p_other"];
         
         [self initTopView];
         [self initScrollView];
@@ -38,19 +40,32 @@ Strong UITableView *tableView;
 {
     self.topBg = [[UIImageView alloc] initWithImage:IMAGEBYENAME(@"gr_bg")];
     self.topBg.frame = CGRectMake(0, 0, ScreenWidth, SizeFrom750(505));
+    self.topBg.userInteractionEnabled = YES;
     [self addSubview:_topBg];
     
     self.iconImg = [[UIImageView alloc] init];
     self.iconImg.frame = CGRectMake(0, 0, SizeFrom750(200), SizeFrom750(200));
     self.iconImg.center = CGPointMake(_topBg.center.x, _topBg.center.y - 20);
-    ViewBorderRadius(_iconImg, SizeFrom750(100), 2, [UIColor grayColor]);
+    self.iconImg.userInteractionEnabled = YES;
+    ViewBorderRadius(_iconImg, SizeFrom750(100), 2, [UIColor whiteColor]);
     [self.topBg addSubview:_iconImg];
+    
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(changeIconImg)];
+    [_iconImg addGestureRecognizer:tap];
+}
+
+- (void)changeIconImg
+{
+    if (self.seBlock) {
+        self.seBlock();
+    }
 }
 
 - (void)initScrollView
 {
     self.scroll = [[UIScrollView alloc] init];
-    self.scroll.frame = CGRectMake(0, 5, ScreenWidth - 10, ScreenHeight - 44 -64);
+    //self.scroll.frame = CGRectMake(0, 5, ScreenWidth - 10, ScreenHeight - 44 -64);
+    self.scroll.frame = CGRectMake(0, SizeFrom750(505) - 30, ScreenWidth - 10, ScreenHeight - 44 -64);
     self.scroll.contentSize = CGSizeMake(ScreenWidth, ScreenHeight - 44 -64 + SizeFrom750(505) -30);
     self.scroll.userInteractionEnabled = YES;
     self.scroll.showsVerticalScrollIndicator = YES;  //垂直滚动条
@@ -61,7 +76,7 @@ Strong UITableView *tableView;
     self.scroll.backgroundColor = [UIColor clearColor];
     [self addSubview:_scroll];
     
-    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(5, SizeFrom750(505)-30, ScreenWidth - 10, ScreenHeight - 64 -44) style:UITableViewStyleGrouped];
+    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(5, 0, ScreenWidth - 10, ScreenHeight - 64 -44) style:UITableViewStyleGrouped];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     //self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
@@ -72,8 +87,8 @@ Strong UITableView *tableView;
 
     [_scroll addSubview:_tableView];
     
-    NSLog(@"scrollViewFrame:%@",NSStringFromCGRect(_scroll.frame));
-    NSLog(@"tableViewFrame:%@",NSStringFromCGRect(_tableView.frame));
+//    NSLog(@"scrollViewFrame:%@",NSStringFromCGRect(_scroll.frame));
+//    NSLog(@"tableViewFrame:%@",NSStringFromCGRect(_tableView.frame));
 }
 
 #pragma mark Delegate
@@ -90,14 +105,18 @@ Strong UITableView *tableView;
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *cellid = @"mycell";
-    UITableViewCell *cell  = [tableView dequeueReusableCellWithIdentifier:cellid];
+//    UITableViewCell *cell  = [tableView dequeueReusableCellWithIdentifier:cellid];
+//
+//    if (cell == nil)
+//    {
+//        cell =[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle
+//                                    reuseIdentifier:cellid];
+//    }
+//    cell.textLabel.text = [cellArr objectAtIndex:indexPath.row];
+    PersonCell *cell = [[PersonCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellid];
     
-    if (cell == nil)
-    {
-        cell =[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle
-                                    reuseIdentifier:cellid];
-    }
-    cell.textLabel.text = [cellArr objectAtIndex:indexPath.row];
+    cell.expLab.text = [cellArr objectAtIndex:indexPath.row];
+    cell.iconImg.image = IMAGEBYENAME([cellIconArr objectAtIndex:indexPath.row]);
     
     return cell;
 }
@@ -114,7 +133,30 @@ Strong UITableView *tableView;
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
+    switch (indexPath.row) {
+        case 0:
+        {
+            
+        }
+            break;
+        case 1:
+        {
+            
+        }
+            break;
+        case 2:
+        {
+            
+        }
+            break;
+        case 3:
+        {
+            
+        }
+            break;
+        default:
+            break;
+    }
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -135,9 +177,8 @@ Strong UITableView *tableView;
 //scrollView Delegate
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-    NSLog(@"%f",_scroll.contentOffset.y);
+   // NSLog(@"%f",_scroll.contentOffset.y);
     
-
 }
 
 @end

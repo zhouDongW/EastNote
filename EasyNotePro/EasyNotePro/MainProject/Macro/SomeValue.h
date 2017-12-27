@@ -21,7 +21,7 @@
 #define mianBlue [UIColor colorWithHexString:@"#87CEFA"]  //天蓝色
 #define Color66 [UIColor colorWithHexString:@"#666666"]
 
-//qita
+//其他
 #define normalCellH 64.0f
 
 

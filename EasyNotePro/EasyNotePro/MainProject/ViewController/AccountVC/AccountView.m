@@ -133,7 +133,6 @@
     AccountTable *deModel = [dataArr objectAtIndex:indexPath.row];
     [dataArr removeObjectAtIndex:indexPath.row];
     //删除本地数据
-    
     if (self.deBlock) {
         self.deBlock(deModel.accountId);
     }

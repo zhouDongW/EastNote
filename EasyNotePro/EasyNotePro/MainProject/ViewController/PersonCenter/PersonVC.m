@@ -8,12 +8,17 @@
 
 #import "PersonVC.h"
 #import "PersonView.h"
+#import "SelectImgSheet.h"
 
-@interface PersonVC ()
+#import "PersonDataModel.h"
+
+
+@interface PersonVC ()<UIImagePickerControllerDelegate,UINavigationControllerDelegate>
 {
-    
+    SelectImgSheet *selectSheet;
 }
 Strong PersonView *mainView;
+
 @end
 
 @implementation PersonVC
@@ -27,7 +32,29 @@ Strong PersonView *mainView;
     _mainView.frame = CGRectMake(0, 0, ScreenWidth, ScreenHeight);
     self.view = _mainView;
     
+    __block typeof(self) weakSelf = self;
+    _mainView.seBlock = ^() {
+        selectSheet = [[SelectImgSheet alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight)];
+        __block typeof(selectSheet) weakSheet = selectSheet;
+        selectSheet.typeBlock = ^(NSString *type) {
+            if ([type isEqualToString:@"lib"]) {
+                [weakSelf getImgFromAlbum];
+            }
+            else if ([type isEqualToString:@"photo"])
+            {
+                [weakSelf getImgFromCamera];
+            }
+            else
+            {
+                [weakSelf cancelGetImg];
+            }
+            [weakSheet hiddenSheet];
+        };
+        [weakSelf.tabBarController.view addSubview:selectSheet];
+    };
     
+    UIImage *img = [PersonDataModel getIconImg];
+    _mainView.iconImg.image = img;
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -47,5 +74,60 @@ Strong PersonView *mainView;
     
 }
 
+- (void)getImgFromAlbum
+{
+    UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+    picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    picker.delegate = self;
+    picker.allowsEditing = YES;
+    
+    [self presentViewController:picker animated:YES completion:^{
+        
+    }];
+}
+
+- (void)getImgFromCamera
+{
+    UIImagePickerControllerSourceType sourceType = UIImagePickerControllerSourceTypeCamera;
+    
+    if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
+        UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+        picker.delegate = self;
+        picker.allowsEditing = YES;
+        picker.sourceType = sourceType;
+        
+        [self presentViewController:picker animated:YES completion:^{
+            
+        }];
+    }
+}
+
+- (void)cancelGetImg
+{
+    [selectSheet hiddenSheet];
+}
+
+#pragma mark Delegate
+//
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info
+{
+    UIImage *img = [info objectForKey:UIImagePickerControllerEditedImage];
+    _mainView.iconImg.image = img;
+    [PersonDataModel saveUserIcon:img];
+//    if () {
+//
+//    } else {
+//
+//    }
+    
+    [picker dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
+{
+    [picker dismissViewControllerAnimated:YES completion:nil];
+}
+
+//
 
 @end
