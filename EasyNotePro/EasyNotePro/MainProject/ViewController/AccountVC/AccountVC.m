@@ -7,7 +7,7 @@
 //
 
 #import "AccountVC.h"
-#import "AddInfoVC.h"
+#import "AddAccountVC.h"
 
 #import "AccountView.h"
 
@@ -49,7 +49,7 @@ Strong AccountView *mainView;
     [_mainView configAccountView:dbGetArr];
     
     _mainView.pBlock = ^(NSInteger index){
-        AddInfoVC *avc = InitObject(AddInfoVC);
+        AddAccountVC *avc = InitObject(AddAccountVC);
         avc.isShowAccount = YES;
         avc.accountData = [dbGetArr objectAtIndex:index];
         [weakSelf pushViewController:avc animated:YES];

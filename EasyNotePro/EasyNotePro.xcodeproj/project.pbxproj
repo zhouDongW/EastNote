@@ -34,8 +34,18 @@
 		225450DE1FF39D7E007A3BAD /* p_info@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 225450D61FF39D7E007A3BAD /* p_info@2x.png */; };
 		225450DF1FF39D7E007A3BAD /* p_clear@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 225450D71FF39D7E007A3BAD /* p_clear@2x.png */; };
 		225450E01FF39D7E007A3BAD /* p_other@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 225450D81FF39D7E007A3BAD /* p_other@2x.png */; };
+		22C1CBB81FF4818800D01B90 /* NoteView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C1CBB71FF4818800D01B90 /* NoteView.m */; };
+		22C1CBBB1FF4850300D01B90 /* TextViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C1CBBA1FF4850300D01B90 /* TextViewCell.m */; };
+		22C1CBBE1FF48EE200D01B90 /* AddNoteVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C1CBBD1FF48EE200D01B90 /* AddNoteVC.m */; };
+		22C1CBC11FF4912A00D01B90 /* AddAccountVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C1CBC01FF4912A00D01B90 /* AddAccountVC.m */; };
+		22C1CBC41FF4915100D01B90 /* AddAccountView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C1CBC31FF4915100D01B90 /* AddAccountView.m */; };
+		22C1CBC71FF4916900D01B90 /* AddNoteView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C1CBC61FF4916900D01B90 /* AddNoteView.m */; };
+		22C1CBCD1FF496E100D01B90 /* bg_sm@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22C1CBCB1FF496E100D01B90 /* bg_sm@3x.png */; };
+		22C1CBCE1FF496E100D01B90 /* bg_sm@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22C1CBCC1FF496E100D01B90 /* bg_sm@2x.png */; };
+		22C1CBD11FF4BB8F00D01B90 /* AddItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C1CBD01FF4BB8F00D01B90 /* AddItem.m */; };
 		22E57D7C1FF0F5EE001E6A0C /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 22E57D7B1FF0F5ED001E6A0C /* back.png */; };
 		22F1FCA41FEE048A00D771C9 /* CommonUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F1FCA31FEE048A00D771C9 /* CommonUtils.m */; };
+		22FD29371FF5DE8100D72DE5 /* SelectTimeSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FD29361FF5DE8100D72DE5 /* SelectTimeSheet.m */; };
 		22FDD3021FEB509A00043B1D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FDD3011FEB509A00043B1D /* AppDelegate.m */; };
 		22FDD30A1FEB509A00043B1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22FDD3091FEB509A00043B1D /* Assets.xcassets */; };
 		22FDD30D1FEB509A00043B1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22FDD30B1FEB509A00043B1D /* LaunchScreen.storyboard */; };
@@ -117,9 +127,27 @@
 		225450D61FF39D7E007A3BAD /* p_info@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "p_info@2x.png"; sourceTree = "<group>"; };
 		225450D71FF39D7E007A3BAD /* p_clear@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "p_clear@2x.png"; sourceTree = "<group>"; };
 		225450D81FF39D7E007A3BAD /* p_other@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "p_other@2x.png"; sourceTree = "<group>"; };
+		22C1CBB61FF4818800D01B90 /* NoteView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoteView.h; sourceTree = "<group>"; };
+		22C1CBB71FF4818800D01B90 /* NoteView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NoteView.m; sourceTree = "<group>"; };
+		22C1CBB91FF4850300D01B90 /* TextViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextViewCell.h; sourceTree = "<group>"; };
+		22C1CBBA1FF4850300D01B90 /* TextViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextViewCell.m; sourceTree = "<group>"; };
+		22C1CBBC1FF48EE200D01B90 /* AddNoteVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddNoteVC.h; sourceTree = "<group>"; };
+		22C1CBBD1FF48EE200D01B90 /* AddNoteVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddNoteVC.m; sourceTree = "<group>"; };
+		22C1CBBF1FF4912A00D01B90 /* AddAccountVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddAccountVC.h; sourceTree = "<group>"; };
+		22C1CBC01FF4912A00D01B90 /* AddAccountVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddAccountVC.m; sourceTree = "<group>"; };
+		22C1CBC21FF4915100D01B90 /* AddAccountView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddAccountView.h; sourceTree = "<group>"; };
+		22C1CBC31FF4915100D01B90 /* AddAccountView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddAccountView.m; sourceTree = "<group>"; };
+		22C1CBC51FF4916900D01B90 /* AddNoteView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddNoteView.h; sourceTree = "<group>"; };
+		22C1CBC61FF4916900D01B90 /* AddNoteView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddNoteView.m; sourceTree = "<group>"; };
+		22C1CBCB1FF496E100D01B90 /* bg_sm@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_sm@3x.png"; sourceTree = "<group>"; };
+		22C1CBCC1FF496E100D01B90 /* bg_sm@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_sm@2x.png"; sourceTree = "<group>"; };
+		22C1CBCF1FF4BB8F00D01B90 /* AddItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddItem.h; sourceTree = "<group>"; };
+		22C1CBD01FF4BB8F00D01B90 /* AddItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddItem.m; sourceTree = "<group>"; };
 		22E57D7B1FF0F5ED001E6A0C /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
 		22F1FCA21FEE048A00D771C9 /* CommonUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonUtils.h; sourceTree = "<group>"; };
 		22F1FCA31FEE048A00D771C9 /* CommonUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonUtils.m; sourceTree = "<group>"; };
+		22FD29351FF5DE8100D72DE5 /* SelectTimeSheet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelectTimeSheet.h; sourceTree = "<group>"; };
+		22FD29361FF5DE8100D72DE5 /* SelectTimeSheet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectTimeSheet.m; sourceTree = "<group>"; };
 		22FDD2FD1FEB509A00043B1D /* EasyNotePro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyNotePro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22FDD3001FEB509A00043B1D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		22FDD3011FEB509A00043B1D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -204,6 +232,8 @@
 				221ED8D31FF223F700D9540E /* TextFieldWithBtn.m */,
 				225450BA1FF3454F007A3BAD /* SelectImgSheet.h */,
 				225450BB1FF3454F007A3BAD /* SelectImgSheet.m */,
+				22FD29351FF5DE8100D72DE5 /* SelectTimeSheet.h */,
+				22FD29361FF5DE8100D72DE5 /* SelectTimeSheet.m */,
 			);
 			path = CommonUIClass;
 			sourceTree = "<group>";
@@ -231,6 +261,39 @@
 				2253944E1FECE31C00A002C0 /* AccountModel.m */,
 			);
 			path = AccountModel;
+			sourceTree = "<group>";
+		};
+		22C1CBC81FF4928400D01B90 /* AddAccount */ = {
+			isa = PBXGroup;
+			children = (
+				22C1CBBF1FF4912A00D01B90 /* AddAccountVC.h */,
+				22C1CBC01FF4912A00D01B90 /* AddAccountVC.m */,
+				22C1CBC21FF4915100D01B90 /* AddAccountView.h */,
+				22C1CBC31FF4915100D01B90 /* AddAccountView.m */,
+			);
+			path = AddAccount;
+			sourceTree = "<group>";
+		};
+		22C1CBC91FF4928400D01B90 /* AddNote */ = {
+			isa = PBXGroup;
+			children = (
+				22C1CBBC1FF48EE200D01B90 /* AddNoteVC.h */,
+				22C1CBBD1FF48EE200D01B90 /* AddNoteVC.m */,
+				22C1CBC51FF4916900D01B90 /* AddNoteView.h */,
+				22C1CBC61FF4916900D01B90 /* AddNoteView.m */,
+				22C1CBB91FF4850300D01B90 /* TextViewCell.h */,
+				22C1CBBA1FF4850300D01B90 /* TextViewCell.m */,
+			);
+			path = AddNote;
+			sourceTree = "<group>";
+		};
+		22C1CBCA1FF496E100D01B90 /* Add */ = {
+			isa = PBXGroup;
+			children = (
+				22C1CBCB1FF496E100D01B90 /* bg_sm@3x.png */,
+				22C1CBCC1FF496E100D01B90 /* bg_sm@2x.png */,
+			);
+			path = Add;
 			sourceTree = "<group>";
 		};
 		22FDD2F41FEB509A00043B1D = {
@@ -348,6 +411,7 @@
 				225394641FED08F600A002C0 /* main_per_ed.png */,
 				225394631FED08F600A002C0 /* main_per.png */,
 				22E57D7B1FF0F5ED001E6A0C /* back.png */,
+				22C1CBCA1FF496E100D01B90 /* Add */,
 				22FDD3731FEB9F1D00043B1D /* Person */,
 			);
 			path = PngResources;
@@ -455,6 +519,8 @@
 			children = (
 				22FDD3641FEB931B00043B1D /* NoteVC.h */,
 				22FDD3651FEB931B00043B1D /* NoteVC.m */,
+				22C1CBB61FF4818800D01B90 /* NoteView.h */,
+				22C1CBB71FF4818800D01B90 /* NoteView.m */,
 			);
 			path = Note;
 			sourceTree = "<group>";
@@ -466,6 +532,10 @@
 				22FDD3621FEB930C00043B1D /* AddInfoVC.m */,
 				225394501FECF53200A002C0 /* AddInfoView.h */,
 				225394511FECF53200A002C0 /* AddInfoView.m */,
+				22C1CBCF1FF4BB8F00D01B90 /* AddItem.h */,
+				22C1CBD01FF4BB8F00D01B90 /* AddItem.m */,
+				22C1CBC81FF4928400D01B90 /* AddAccount */,
+				22C1CBC91FF4928400D01B90 /* AddNote */,
 			);
 			path = AddInfo;
 			sourceTree = "<group>";
@@ -628,6 +698,7 @@
 				2253945A1FED08DD00A002C0 /* main_note_ed.png in Resources */,
 				225394621FED08EF00A002C0 /* main_add_ed.png in Resources */,
 				225450D91FF39D7E007A3BAD /* P_pw@2x.png in Resources */,
+				22C1CBCE1FF496E100D01B90 /* bg_sm@2x.png in Resources */,
 				225450DE1FF39D7E007A3BAD /* p_info@2x.png in Resources */,
 				225394561FED06FE00A002C0 /* main_acc.png in Resources */,
 				22FDD30D1FEB509A00043B1D /* LaunchScreen.storyboard in Resources */,
@@ -635,6 +706,7 @@
 				2253945E1FED08E600A002C0 /* main_other_ed.png in Resources */,
 				225394591FED08DD00A002C0 /* main_note.png in Resources */,
 				22FDD3771FEB9F2E00043B1D /* gr_bg@2x.png in Resources */,
+				22C1CBCD1FF496E100D01B90 /* bg_sm@3x.png in Resources */,
 				225450E01FF39D7E007A3BAD /* p_other@2x.png in Resources */,
 				225450DF1FF39D7E007A3BAD /* p_clear@2x.png in Resources */,
 				225450DC1FF39D7E007A3BAD /* p_other@3x.png in Resources */,
@@ -721,28 +793,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22C1CBD11FF4BB8F00D01B90 /* AddItem.m in Sources */,
 				22FDD3491FEB58E000043B1D /* AppDelegate+Config.m in Sources */,
 				22FDD3441FEB562900043B1D /* BaseModel.m in Sources */,
 				225450CD1FF38477007A3BAD /* PersonDataModel.m in Sources */,
 				2253944F1FECE31C00A002C0 /* AccountModel.m in Sources */,
+				22C1CBC41FF4915100D01B90 /* AddAccountView.m in Sources */,
 				22FDD3431FEB562900043B1D /* BaseViewController.m in Sources */,
 				22FDD3631FEB930C00043B1D /* AddInfoVC.m in Sources */,
 				225450BC1FF3454F007A3BAD /* SelectImgSheet.m in Sources */,
 				22F1FCA41FEE048A00D771C9 /* CommonUtils.m in Sources */,
 				22FDD36F1FEB98B100043B1D /* AccountView.m in Sources */,
 				225394491FECDAAC00A002C0 /* AccountCell.m in Sources */,
+				22C1CBC11FF4912A00D01B90 /* AddAccountVC.m in Sources */,
 				22FDD3601FEB92F200043B1D /* AccountVC.m in Sources */,
 				22FDD3721FEB9C0700043B1D /* PersonView.m in Sources */,
 				225450D01FF39770007A3BAD /* PersonCell.m in Sources */,
 				22FDD3661FEB931B00043B1D /* NoteVC.m in Sources */,
 				22FDD3101FEB509A00043B1D /* main.m in Sources */,
+				22FD29371FF5DE8100D72DE5 /* SelectTimeSheet.m in Sources */,
+				22C1CBC71FF4916900D01B90 /* AddNoteView.m in Sources */,
 				22FDD3581FEB8FB900043B1D /* MainDataModel.m in Sources */,
+				22C1CBBE1FF48EE200D01B90 /* AddNoteVC.m in Sources */,
 				22FDD3551FEB8E9B00043B1D /* DataManager.m in Sources */,
 				221ED8D41FF223F700D9540E /* TextFieldWithBtn.m in Sources */,
 				22FDD3021FEB509A00043B1D /* AppDelegate.m in Sources */,
+				22C1CBBB1FF4850300D01B90 /* TextViewCell.m in Sources */,
 				22FDD36C1FEB933D00043B1D /* PersonVC.m in Sources */,
 				22FDD3691FEB932B00043B1D /* OtherVC.m in Sources */,
 				225394521FECF53200A002C0 /* AddInfoView.m in Sources */,
+				22C1CBB81FF4818800D01B90 /* NoteView.m in Sources */,
 				22FDD3411FEB562900043B1D /* BaseView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

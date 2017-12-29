@@ -8,12 +8,11 @@
 
 #import "NoteVC.h"
 
+
 @interface NoteVC ()
 {
     
 }
-
-Strong UITableView *tableView;
 
 @end
 
@@ -23,6 +22,7 @@ Strong UITableView *tableView;
     [super viewDidLoad];
     
     self.title = @"随记";
+    
     
 }
 
