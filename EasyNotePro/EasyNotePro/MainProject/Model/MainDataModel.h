@@ -22,6 +22,13 @@ Strong NSString *descript;
 
 @end
 
+@interface NoteTable :NSObject
+Strong NSString *noteId;
+Strong NSString *title;
+Strong NSString *time;
+Strong NSString *descript;
+@end
+
 @interface OtherTable :NSObject
 Strong NSString *otherId;
 Assign NSInteger type;

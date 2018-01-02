@@ -16,6 +16,10 @@
 
 @end
 
+@implementation NoteTable
+
+@end
+
 @implementation OtherTable
 
 @end

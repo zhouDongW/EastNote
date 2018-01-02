@@ -34,6 +34,7 @@
 		225450DE1FF39D7E007A3BAD /* p_info@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 225450D61FF39D7E007A3BAD /* p_info@2x.png */; };
 		225450DF1FF39D7E007A3BAD /* p_clear@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 225450D71FF39D7E007A3BAD /* p_clear@2x.png */; };
 		225450E01FF39D7E007A3BAD /* p_other@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 225450D81FF39D7E007A3BAD /* p_other@2x.png */; };
+		227384B01FFB2F3400189A5A /* NoteModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 227384AF1FFB2F3400189A5A /* NoteModel.m */; };
 		22C1CBB81FF4818800D01B90 /* NoteView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C1CBB71FF4818800D01B90 /* NoteView.m */; };
 		22C1CBBB1FF4850300D01B90 /* TextViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C1CBBA1FF4850300D01B90 /* TextViewCell.m */; };
 		22C1CBBE1FF48EE200D01B90 /* AddNoteVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C1CBBD1FF48EE200D01B90 /* AddNoteVC.m */; };
@@ -127,6 +128,8 @@
 		225450D61FF39D7E007A3BAD /* p_info@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "p_info@2x.png"; sourceTree = "<group>"; };
 		225450D71FF39D7E007A3BAD /* p_clear@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "p_clear@2x.png"; sourceTree = "<group>"; };
 		225450D81FF39D7E007A3BAD /* p_other@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "p_other@2x.png"; sourceTree = "<group>"; };
+		227384AE1FFB2F3400189A5A /* NoteModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoteModel.h; sourceTree = "<group>"; };
+		227384AF1FFB2F3400189A5A /* NoteModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NoteModel.m; sourceTree = "<group>"; };
 		22C1CBB61FF4818800D01B90 /* NoteView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoteView.h; sourceTree = "<group>"; };
 		22C1CBB71FF4818800D01B90 /* NoteView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NoteView.m; sourceTree = "<group>"; };
 		22C1CBB91FF4850300D01B90 /* TextViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextViewCell.h; sourceTree = "<group>"; };
@@ -261,6 +264,15 @@
 				2253944E1FECE31C00A002C0 /* AccountModel.m */,
 			);
 			path = AccountModel;
+			sourceTree = "<group>";
+		};
+		227384AD1FFB2F0600189A5A /* NoteModel */ = {
+			isa = PBXGroup;
+			children = (
+				227384AE1FFB2F3400189A5A /* NoteModel.h */,
+				227384AF1FFB2F3400189A5A /* NoteModel.m */,
+			);
+			path = NoteModel;
 			sourceTree = "<group>";
 		};
 		22C1CBC81FF4928400D01B90 /* AddAccount */ = {
@@ -453,6 +465,7 @@
 			children = (
 				22FDD3561FEB8FB900043B1D /* MainDataModel.h */,
 				22FDD3571FEB8FB900043B1D /* MainDataModel.m */,
+				227384AD1FFB2F0600189A5A /* NoteModel */,
 				2253944C1FECE2E100A002C0 /* AccountModel */,
 				2253944B1FECE2E100A002C0 /* OtherModel */,
 				2253944A1FECE2E000A002C0 /* PersonModel */,
@@ -806,6 +819,7 @@
 				22FDD36F1FEB98B100043B1D /* AccountView.m in Sources */,
 				225394491FECDAAC00A002C0 /* AccountCell.m in Sources */,
 				22C1CBC11FF4912A00D01B90 /* AddAccountVC.m in Sources */,
+				227384B01FFB2F3400189A5A /* NoteModel.m in Sources */,
 				22FDD3601FEB92F200043B1D /* AccountVC.m in Sources */,
 				22FDD3721FEB9C0700043B1D /* PersonView.m in Sources */,
 				225450D01FF39770007A3BAD /* PersonCell.m in Sources */,

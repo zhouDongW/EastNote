@@ -7,9 +7,20 @@
 //
 
 #import "BaseView.h"
+#import "NoteModel.h"
 
 typedef void(^dataSave)(NSString *ntitle,NSString *ntime,NSString *ndescript);
+typedef void(^dataUpdate)(NSString *noteid,NSString *ntitle,NSString *ntime,NSString *ndescript);
 @interface AddNoteView : BaseView
-
+{
+    
+}
+Strong NSString *noteId;
+Assign BOOL isCanEdit;
+Assign BOOL isSaveUpdate; //yes 更新 no 保存
 Copy dataSave sBlock;
+Copy dataUpdate uBlock;
+
+- (void)configTextField:(NoteTable *)model;
+- (void)changeTextFieldEdit;
 @end

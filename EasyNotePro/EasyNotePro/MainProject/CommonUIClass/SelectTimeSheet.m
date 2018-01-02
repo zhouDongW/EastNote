@@ -36,7 +36,13 @@ Copy NSString *hour;
 {
     self = [super initWithFrame:frame];
     if (self) {
-        self.backgroundColor = [UIColor whiteColor];
+        //self.backgroundColor = [UIColor whiteColor];
+        
+        UIControl *control = [[UIControl alloc] init];
+        control.frame = CGRectMake(0, 0, ScreenWidth, ScreenHeight);
+        control.backgroundColor = [UIColor colorWithWhite:0.5 alpha:0.5];
+        [control addTarget:self action:@selector(controlHidden) forControlEvents:UIControlEventTouchDown];
+        [self addSubview:control];
         
         [self configArrData];
         [self configToolView];
@@ -107,10 +113,15 @@ Copy NSString *hour;
     return _timeArr;
 }
 
+- (void)controlHidden
+{
+    [self cancelClick];
+}
+
 - (void)configToolView
 {
     self.toolView = InitObject(UIView);
-    self.toolView.frame = CGRectMake(0, 0, ScreenWidth, 44);
+    self.toolView.frame = CGRectMake(0, ScreenHeight - 300, ScreenWidth, 44);
     [self addSubview:_toolView];
     
     UIButton *saveBtn = InitObject(UIButton);
@@ -138,7 +149,7 @@ Copy NSString *hour;
 - (void)configPickerView
 {
     self.pickerView = InitObject(UIPickerView);
-    self.pickerView.frame = CGRectMake(0, BOTTOM(_toolView), ScreenWidth, HEIGHT(self) - 44);
+    self.pickerView.frame = CGRectMake(0, BOTTOM(_toolView), ScreenWidth, 300 - 44);
     self.pickerView.backgroundColor = [UIColor whiteColor];
     self.pickerView.dataSource = self;
     self.pickerView.delegate = self;

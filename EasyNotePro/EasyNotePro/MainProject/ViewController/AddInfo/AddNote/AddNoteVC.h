@@ -7,7 +7,14 @@
 //
 
 #import "BaseViewController.h"
+#import "NoteModel.h"
 
 @interface AddNoteVC : BaseViewController
+{
+    
+}
+//yes 为noteVC跳转过来，textfield不可修改
+Assign BOOL isShowNote;
 
+Strong NoteTable *noteData;
 @end

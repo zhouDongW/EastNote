@@ -8,6 +8,15 @@
 
 #import "BaseView.h"
 
+typedef void(^pushBlock)(NSInteger index);
+typedef void(^delBlock)(NSString *nid);
 @interface NoteView : BaseView
+{
+    
+}
+Strong UITableView *tableView;
+Copy pushBlock pBlock;
+Copy delBlock dBlock;
 
+- (void)configNoteView:(NSMutableArray *)mainDataArr;
 @end

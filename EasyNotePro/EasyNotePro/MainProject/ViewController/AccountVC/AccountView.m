@@ -43,7 +43,6 @@
     //self.tableView.allowsSelection = NO;
     self.tableView.sectionHeaderHeight = SizeFrom750(1);
     [self addSubview:self.tableView];
-    
 }
 
 - (void)configAccountView:(NSMutableArray *)mainDataArr

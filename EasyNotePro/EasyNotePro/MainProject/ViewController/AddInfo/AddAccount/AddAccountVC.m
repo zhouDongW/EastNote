@@ -99,13 +99,13 @@ Strong AddAccountView *addView;
     // Dispose of any resources that can be recreated.
 }
 
-    - (void)rightButtonClick:(UIButton *)sender
-    {
-        [self rightBtnWithText:nil];
-        
-        isEdit = YES;
-        _addView.isCanEdit = isEdit;
-        [_addView changeTextFieldEdit];
-    }
+- (void)rightButtonClick:(UIButton *)sender
+{
+    [self rightBtnWithText:nil];
+    
+    isEdit = YES;
+    _addView.isCanEdit = isEdit;
+    [_addView changeTextFieldEdit];
+}
 
 @end
