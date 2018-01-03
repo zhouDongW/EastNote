@@ -15,6 +15,7 @@
     BOOL isEdit;
 }
 Strong AddNoteView *mainView;
+
 @end
 
 @implementation AddNoteVC

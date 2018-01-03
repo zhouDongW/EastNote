@@ -20,7 +20,6 @@
 		225394611FED08EF00A002C0 /* main_add.png in Resources */ = {isa = PBXBuildFile; fileRef = 2253945F1FED08EF00A002C0 /* main_add.png */; };
 		225394621FED08EF00A002C0 /* main_add_ed.png in Resources */ = {isa = PBXBuildFile; fileRef = 225394601FED08EF00A002C0 /* main_add_ed.png */; };
 		225394651FED08F600A002C0 /* main_per.png in Resources */ = {isa = PBXBuildFile; fileRef = 225394631FED08F600A002C0 /* main_per.png */; };
-		225394661FED08F600A002C0 /* main_per_ed.png in Resources */ = {isa = PBXBuildFile; fileRef = 225394641FED08F600A002C0 /* main_per_ed.png */; };
 		225450BC1FF3454F007A3BAD /* SelectImgSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 225450BB1FF3454F007A3BAD /* SelectImgSheet.m */; };
 		225450C11FF3805F007A3BAD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 225450C31FF3805F007A3BAD /* InfoPlist.strings */; };
 		225450C71FF38196007A3BAD /* LoacalString.strings in Resources */ = {isa = PBXBuildFile; fileRef = 225450C91FF38196007A3BAD /* LoacalString.strings */; };
@@ -44,6 +43,16 @@
 		22C1CBCD1FF496E100D01B90 /* bg_sm@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22C1CBCB1FF496E100D01B90 /* bg_sm@3x.png */; };
 		22C1CBCE1FF496E100D01B90 /* bg_sm@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22C1CBCC1FF496E100D01B90 /* bg_sm@2x.png */; };
 		22C1CBD11FF4BB8F00D01B90 /* AddItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C1CBD01FF4BB8F00D01B90 /* AddItem.m */; };
+		22C6E0331FFC816B00967E9B /* p_change@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22C6E0311FFC816B00967E9B /* p_change@3x.png */; };
+		22C6E0341FFC816B00967E9B /* p_change@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22C6E0321FFC816B00967E9B /* p_change@2x.png */; };
+		22C6E0381FFC834900967E9B /* ChangeThemeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C6E0371FFC834900967E9B /* ChangeThemeVC.m */; };
+		22C6E03B1FFCA97400967E9B /* ChangeThemeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C6E03A1FFCA97400967E9B /* ChangeThemeView.m */; };
+		22C6E03E1FFCAFFA00967E9B /* BaseTabBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C6E03D1FFCAFFA00967E9B /* BaseTabBarVC.m */; };
+		22C6E0411FFCB78100967E9B /* ThemeSelectTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C6E0401FFCB78100967E9B /* ThemeSelectTool.m */; };
+		22C6E0461FFCBA3F00967E9B /* orange.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 22C6E0431FFCBA3F00967E9B /* orange.bundle */; };
+		22C6E0471FFCBA3F00967E9B /* red.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 22C6E0441FFCBA3F00967E9B /* red.bundle */; };
+		22C6E0481FFCBA3F00967E9B /* blue.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 22C6E0451FFCBA3F00967E9B /* blue.bundle */; };
+		22C6E04A1FFCCCE800967E9B /* main_per_ed.png in Resources */ = {isa = PBXBuildFile; fileRef = 22C6E0491FFCCCE700967E9B /* main_per_ed.png */; };
 		22E57D7C1FF0F5EE001E6A0C /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 22E57D7B1FF0F5ED001E6A0C /* back.png */; };
 		22F1FCA41FEE048A00D771C9 /* CommonUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F1FCA31FEE048A00D771C9 /* CommonUtils.m */; };
 		22FD29371FF5DE8100D72DE5 /* SelectTimeSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FD29361FF5DE8100D72DE5 /* SelectTimeSheet.m */; };
@@ -107,7 +116,6 @@
 		2253945F1FED08EF00A002C0 /* main_add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main_add.png; sourceTree = "<group>"; };
 		225394601FED08EF00A002C0 /* main_add_ed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main_add_ed.png; sourceTree = "<group>"; };
 		225394631FED08F600A002C0 /* main_per.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main_per.png; sourceTree = "<group>"; };
-		225394641FED08F600A002C0 /* main_per_ed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main_per_ed.png; sourceTree = "<group>"; };
 		225450BA1FF3454F007A3BAD /* SelectImgSheet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelectImgSheet.h; sourceTree = "<group>"; };
 		225450BB1FF3454F007A3BAD /* SelectImgSheet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectImgSheet.m; sourceTree = "<group>"; };
 		225450BF1FF3803D007A3BAD /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
@@ -146,6 +154,20 @@
 		22C1CBCC1FF496E100D01B90 /* bg_sm@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_sm@2x.png"; sourceTree = "<group>"; };
 		22C1CBCF1FF4BB8F00D01B90 /* AddItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddItem.h; sourceTree = "<group>"; };
 		22C1CBD01FF4BB8F00D01B90 /* AddItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddItem.m; sourceTree = "<group>"; };
+		22C6E0311FFC816B00967E9B /* p_change@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "p_change@3x.png"; sourceTree = "<group>"; };
+		22C6E0321FFC816B00967E9B /* p_change@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "p_change@2x.png"; sourceTree = "<group>"; };
+		22C6E0361FFC834900967E9B /* ChangeThemeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChangeThemeVC.h; sourceTree = "<group>"; };
+		22C6E0371FFC834900967E9B /* ChangeThemeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChangeThemeVC.m; sourceTree = "<group>"; };
+		22C6E0391FFCA97400967E9B /* ChangeThemeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChangeThemeView.h; sourceTree = "<group>"; };
+		22C6E03A1FFCA97400967E9B /* ChangeThemeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChangeThemeView.m; sourceTree = "<group>"; };
+		22C6E03C1FFCAFFA00967E9B /* BaseTabBarVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTabBarVC.h; sourceTree = "<group>"; };
+		22C6E03D1FFCAFFA00967E9B /* BaseTabBarVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarVC.m; sourceTree = "<group>"; };
+		22C6E03F1FFCB78100967E9B /* ThemeSelectTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThemeSelectTool.h; sourceTree = "<group>"; };
+		22C6E0401FFCB78100967E9B /* ThemeSelectTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThemeSelectTool.m; sourceTree = "<group>"; };
+		22C6E0431FFCBA3F00967E9B /* orange.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = orange.bundle; sourceTree = "<group>"; };
+		22C6E0441FFCBA3F00967E9B /* red.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = red.bundle; sourceTree = "<group>"; };
+		22C6E0451FFCBA3F00967E9B /* blue.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = blue.bundle; sourceTree = "<group>"; };
+		22C6E0491FFCCCE700967E9B /* main_per_ed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main_per_ed.png; sourceTree = "<group>"; };
 		22E57D7B1FF0F5ED001E6A0C /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
 		22F1FCA21FEE048A00D771C9 /* CommonUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonUtils.h; sourceTree = "<group>"; };
 		22F1FCA31FEE048A00D771C9 /* CommonUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonUtils.m; sourceTree = "<group>"; };
@@ -308,6 +330,27 @@
 			path = Add;
 			sourceTree = "<group>";
 		};
+		22C6E0351FFC832600967E9B /* ChangeTheme */ = {
+			isa = PBXGroup;
+			children = (
+				22C6E0361FFC834900967E9B /* ChangeThemeVC.h */,
+				22C6E0371FFC834900967E9B /* ChangeThemeVC.m */,
+				22C6E0391FFCA97400967E9B /* ChangeThemeView.h */,
+				22C6E03A1FFCA97400967E9B /* ChangeThemeView.m */,
+			);
+			path = ChangeTheme;
+			sourceTree = "<group>";
+		};
+		22C6E0421FFCB9A300967E9B /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				22C6E0451FFCBA3F00967E9B /* blue.bundle */,
+				22C6E0431FFCBA3F00967E9B /* orange.bundle */,
+				22C6E0441FFCBA3F00967E9B /* red.bundle */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
 		22FDD2F41FEB509A00043B1D = {
 			isa = PBXGroup;
 			children = (
@@ -337,6 +380,8 @@
 				22FDD3011FEB509A00043B1D /* AppDelegate.m */,
 				22FDD3471FEB58E000043B1D /* AppDelegate+Config.h */,
 				22FDD3481FEB58E000043B1D /* AppDelegate+Config.m */,
+				22C6E03C1FFCAFFA00967E9B /* BaseTabBarVC.h */,
+				22C6E03D1FFCAFFA00967E9B /* BaseTabBarVC.m */,
 				22FDD3321FEB543500043B1D /* MainProject */,
 				22FDD3091FEB509A00043B1D /* Assets.xcassets */,
 				22FDD30B1FEB509A00043B1D /* LaunchScreen.storyboard */,
@@ -412,6 +457,7 @@
 		22FDD3361FEB54CB00043B1D /* PngResources */ = {
 			isa = PBXGroup;
 			children = (
+				22C6E0421FFCB9A300967E9B /* Theme */,
 				225394531FED06FE00A002C0 /* main_acc_ed.png */,
 				225394541FED06FE00A002C0 /* main_acc.png */,
 				225394581FED08DC00A002C0 /* main_note_ed.png */,
@@ -420,8 +466,8 @@
 				2253945B1FED08E600A002C0 /* main_other.png */,
 				225394601FED08EF00A002C0 /* main_add_ed.png */,
 				2253945F1FED08EF00A002C0 /* main_add.png */,
-				225394641FED08F600A002C0 /* main_per_ed.png */,
 				225394631FED08F600A002C0 /* main_per.png */,
+				22C6E0491FFCCCE700967E9B /* main_per_ed.png */,
 				22E57D7B1FF0F5ED001E6A0C /* back.png */,
 				22C1CBCA1FF496E100D01B90 /* Add */,
 				22FDD3731FEB9F1D00043B1D /* Person */,
@@ -479,6 +525,8 @@
 			children = (
 				22F1FCA21FEE048A00D771C9 /* CommonUtils.h */,
 				22F1FCA31FEE048A00D771C9 /* CommonUtils.m */,
+				22C6E03F1FFCB78100967E9B /* ThemeSelectTool.h */,
+				22C6E0401FFCB78100967E9B /* ThemeSelectTool.m */,
 				22FDD3521FEB8E5700043B1D /* Https */,
 				22FDD3511FEB8E5700043B1D /* LocalData */,
 			);
@@ -510,6 +558,7 @@
 				22FDD3711FEB9C0700043B1D /* PersonView.m */,
 				225450CE1FF39770007A3BAD /* PersonCell.h */,
 				225450CF1FF39770007A3BAD /* PersonCell.m */,
+				22C6E0351FFC832600967E9B /* ChangeTheme */,
 			);
 			path = PersonCenter;
 			sourceTree = "<group>";
@@ -575,6 +624,8 @@
 				225450D41FF39D7E007A3BAD /* p_other@3x.png */,
 				225450D11FF39D7D007A3BAD /* P_pw@2x.png */,
 				225450D21FF39D7D007A3BAD /* P_pw@3x.png */,
+				22C6E0321FFC816B00967E9B /* p_change@2x.png */,
+				22C6E0311FFC816B00967E9B /* p_change@3x.png */,
 			);
 			path = Person;
 			sourceTree = "<group>";
@@ -707,25 +758,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				225394611FED08EF00A002C0 /* main_add.png in Resources */,
+				22C6E0331FFC816B00967E9B /* p_change@3x.png in Resources */,
 				225450C71FF38196007A3BAD /* LoacalString.strings in Resources */,
+				22C6E0461FFCBA3F00967E9B /* orange.bundle in Resources */,
+				22C6E0341FFC816B00967E9B /* p_change@2x.png in Resources */,
 				2253945A1FED08DD00A002C0 /* main_note_ed.png in Resources */,
 				225394621FED08EF00A002C0 /* main_add_ed.png in Resources */,
 				225450D91FF39D7E007A3BAD /* P_pw@2x.png in Resources */,
 				22C1CBCE1FF496E100D01B90 /* bg_sm@2x.png in Resources */,
 				225450DE1FF39D7E007A3BAD /* p_info@2x.png in Resources */,
+				22C6E0481FFCBA3F00967E9B /* blue.bundle in Resources */,
 				225394561FED06FE00A002C0 /* main_acc.png in Resources */,
 				22FDD30D1FEB509A00043B1D /* LaunchScreen.storyboard in Resources */,
 				225450C11FF3805F007A3BAD /* InfoPlist.strings in Resources */,
+				22C6E0471FFCBA3F00967E9B /* red.bundle in Resources */,
 				2253945E1FED08E600A002C0 /* main_other_ed.png in Resources */,
 				225394591FED08DD00A002C0 /* main_note.png in Resources */,
 				22FDD3771FEB9F2E00043B1D /* gr_bg@2x.png in Resources */,
+				22C6E04A1FFCCCE800967E9B /* main_per_ed.png in Resources */,
 				22C1CBCD1FF496E100D01B90 /* bg_sm@3x.png in Resources */,
 				225450E01FF39D7E007A3BAD /* p_other@2x.png in Resources */,
 				225450DF1FF39D7E007A3BAD /* p_clear@2x.png in Resources */,
 				225450DC1FF39D7E007A3BAD /* p_other@3x.png in Resources */,
 				225450DA1FF39D7E007A3BAD /* P_pw@3x.png in Resources */,
 				22FDD30A1FEB509A00043B1D /* Assets.xcassets in Resources */,
-				225394661FED08F600A002C0 /* main_per_ed.png in Resources */,
 				22FDD3761FEB9F2E00043B1D /* gr_bg3x.png in Resources */,
 				225450DD1FF39D7E007A3BAD /* p_info@3x.png in Resources */,
 				225394651FED08F600A002C0 /* main_per.png in Resources */,
@@ -814,9 +870,12 @@
 				22C1CBC41FF4915100D01B90 /* AddAccountView.m in Sources */,
 				22FDD3431FEB562900043B1D /* BaseViewController.m in Sources */,
 				22FDD3631FEB930C00043B1D /* AddInfoVC.m in Sources */,
+				22C6E03E1FFCAFFA00967E9B /* BaseTabBarVC.m in Sources */,
 				225450BC1FF3454F007A3BAD /* SelectImgSheet.m in Sources */,
 				22F1FCA41FEE048A00D771C9 /* CommonUtils.m in Sources */,
 				22FDD36F1FEB98B100043B1D /* AccountView.m in Sources */,
+				22C6E0381FFC834900967E9B /* ChangeThemeVC.m in Sources */,
+				22C6E0411FFCB78100967E9B /* ThemeSelectTool.m in Sources */,
 				225394491FECDAAC00A002C0 /* AccountCell.m in Sources */,
 				22C1CBC11FF4912A00D01B90 /* AddAccountVC.m in Sources */,
 				227384B01FFB2F3400189A5A /* NoteModel.m in Sources */,
@@ -833,6 +892,7 @@
 				221ED8D41FF223F700D9540E /* TextFieldWithBtn.m in Sources */,
 				22FDD3021FEB509A00043B1D /* AppDelegate.m in Sources */,
 				22C1CBBB1FF4850300D01B90 /* TextViewCell.m in Sources */,
+				22C6E03B1FFCA97400967E9B /* ChangeThemeView.m in Sources */,
 				22FDD36C1FEB933D00043B1D /* PersonVC.m in Sources */,
 				22FDD3691FEB932B00043B1D /* OtherVC.m in Sources */,
 				225394521FECF53200A002C0 /* AddInfoView.m in Sources */,

@@ -54,7 +54,6 @@ Strong SelectTimeSheet *timeSheet;
 
 - (void)selectNoteTime
 {
-    
     //_timeSheet = [[SelectTimeSheet alloc] initWithFrame:CGRectMake(0, ScreenHeight - 300, ScreenWidth, 300)];
     _timeSheet = [[SelectTimeSheet alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight)];
     _timeSheet.delegate = self;
@@ -183,11 +182,15 @@ Strong SelectTimeSheet *timeSheet;
         }
         
         if (_isCanEdit == YES) {
+            selectBtn.hidden = NO;
             selectBtn.userInteractionEnabled = YES;
+            [selectBtn setTitleColor:mianBlue forState:UIControlStateNormal];
         }
         else
         {
             selectBtn.userInteractionEnabled = NO;
+            //[selectBtn setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
+            selectBtn.hidden = YES;
         }
     }
     else if (row == 2) {
@@ -240,7 +243,6 @@ Strong SelectTimeSheet *timeSheet;
         [saveBtn setBackgroundColor:[UIColor grayColor]];
     }
     return view;
-
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath

@@ -9,6 +9,7 @@
 #import "BaseView.h"
 
 typedef void(^selectBlock)(void);
+typedef void(^pushBlock)(NSInteger index);  //tableview点击跳转
 @interface PersonView : BaseView
 {
     
@@ -16,4 +17,5 @@ typedef void(^selectBlock)(void);
 Strong UIImageView *iconImg;
 
 Copy selectBlock seBlock;
+Copy pushBlock pBlock;
 @end

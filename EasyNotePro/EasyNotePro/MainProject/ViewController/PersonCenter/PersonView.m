@@ -27,8 +27,8 @@ Strong UITableView *tableView;
 {
     self = [super init];
     if (self) {
-        cellArr = @[@"我的信息",@"修改密码",@"销毁数据",@"其他"];
-        cellIconArr = @[@"p_info",@"P_pw",@"p_clear",@"p_other"];
+        cellArr = @[@"我的信息",@"修改密码",@"销毁数据",@"换肤",@"其他"];
+        cellIconArr = @[@"p_info",@"P_pw",@"p_clear",@"p_change",@"p_other"];
         
         [self initTopView];
         [self initScrollView];
@@ -82,7 +82,7 @@ Strong UITableView *tableView;
     //self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.tableView.showsVerticalScrollIndicator = NO;
     //self.tableView.scrollEnabled = NO;
-    self.tableView.allowsSelection = NO;
+    self.tableView.allowsSelection = YES;
     self.tableView.sectionHeaderHeight = SizeFrom750(1);
 
     [_scroll addSubview:_tableView];
@@ -133,29 +133,8 @@ Strong UITableView *tableView;
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    switch (indexPath.row) {
-        case 0:
-        {
-            
-        }
-            break;
-        case 1:
-        {
-            
-        }
-            break;
-        case 2:
-        {
-            
-        }
-            break;
-        case 3:
-        {
-            
-        }
-            break;
-        default:
-            break;
+    if (self.pBlock) {
+        self.pBlock(indexPath.row);
     }
 }
 

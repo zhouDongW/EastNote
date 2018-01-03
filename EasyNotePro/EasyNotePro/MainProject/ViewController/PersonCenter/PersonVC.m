@@ -7,6 +7,8 @@
 //
 
 #import "PersonVC.h"
+#import "ChangeThemeVC.h"
+
 #import "PersonView.h"
 #import "SelectImgSheet.h"
 
@@ -55,6 +57,36 @@ Strong PersonView *mainView;
     
     UIImage *img = [PersonDataModel getIconImg];
     _mainView.iconImg.image = img;
+    
+    //tableview跳转block
+    _mainView.pBlock = ^(NSInteger index) {
+        switch (index) {
+            case 0:
+                {
+                    
+                }
+                break;
+            case 1:
+            {
+                
+            }
+                break;
+            case 2:
+            {
+                
+            }
+                break;
+            case 3: //换主题颜色
+            {
+                ChangeThemeVC *cvc = InitObject(ChangeThemeVC);
+                [weakSelf pushViewController:cvc animated:YES];
+            }
+                break;
+                
+            default:
+                break;
+        }
+    };
 }
 
 - (void)viewWillAppear:(BOOL)animated
