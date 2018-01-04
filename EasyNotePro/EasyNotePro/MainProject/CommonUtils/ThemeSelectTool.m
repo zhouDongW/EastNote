@@ -44,6 +44,8 @@
     NSBundle *themeBundle = [NSBundle bundleWithPath:bundlePath];
     NSString *imgPath = [themeBundle pathForResource:imageName ofType:@"png"];
     
+    //UIImage *img = [UIImage imageNamed:imageName inBundle:themeBundle compatibleWithTraitCollection:nil];
+//    return img;
     return [UIImage imageWithContentsOfFile:imgPath];
     
 }

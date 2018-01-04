@@ -9,7 +9,7 @@
 #import "PersonVC.h"
 #import "ChangeThemeVC.h"
 
-#import "PersonView.h"
+//#import "PersonView.h"
 #import "SelectImgSheet.h"
 
 #import "PersonDataModel.h"
@@ -19,7 +19,7 @@
 {
     SelectImgSheet *selectSheet;
 }
-Strong PersonView *mainView;
+//Strong PersonView *mainView;
 
 @end
 

@@ -7,7 +7,11 @@
 //
 
 #import "BaseViewController.h"
+#import "PersonView.h"
 
 @interface PersonVC : BaseViewController
-
+{
+    
+}
+Strong PersonView *mainView;
 @end
