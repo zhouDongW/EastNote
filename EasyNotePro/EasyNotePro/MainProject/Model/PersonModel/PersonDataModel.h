@@ -7,9 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "DataManager.h"
 
-@interface PersonDataModel : NSObject
+@interface PersonDataModel :DataManager
 + (void)saveUserIcon:(UIImage *)iconimg;
 
 + (UIImage *)getIconImg;
+
++ (BOOL)deleteAllData;
 @end

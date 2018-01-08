@@ -40,7 +40,8 @@ Strong AddInfoView *mainView;
     
     _mainView = InitObject(AddInfoView);
     _mainView.frame = CGRectMake(0, 0, ScreenWidth, ScreenHeight);
-    [self.tabBarController.view addSubview:_mainView];
+    //[self.tabBarController.view addSubview:_mainView];
+    self.view = _mainView;
     
     __block typeof(self) weakSelf = self;
     //页面跳转
@@ -50,17 +51,18 @@ Strong AddInfoView *mainView;
             {
                 AddAccountVC *avc = InitObject(AddAccountVC);
                 
-                [weakSelf.mainView hiddenView];
-                //weakSelf.tabBarController.selectedIndex = 0;
-                [weakSelf pushViewController:avc animated:YES];
+                //用自定义push方法pop后tabbar隐藏了
+                //[weakSelf pushViewController:avc animated:YES];
+                avc.hidesBottomBarWhenPushed = YES;
+                [weakSelf.navigationController pushViewController:avc animated:YES];
             }
                 break;
             case 1:
             {
                 AddNoteVC *nvc = InitObject(AddNoteVC);
-                
-                [weakSelf.mainView hiddenView];
-                [weakSelf pushViewController:nvc animated:YES];
+                nvc.hidesBottomBarWhenPushed = YES;
+                [weakSelf.navigationController pushViewController:nvc animated:YES];
+                //[weakSelf pushViewController:nvc animated:YES];
             }
                 break;
             case 2:

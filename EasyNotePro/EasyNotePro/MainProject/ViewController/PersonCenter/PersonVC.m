@@ -8,6 +8,7 @@
 
 #import "PersonVC.h"
 #import "ChangeThemeVC.h"
+#import "ChangePwVC.h"
 
 //#import "PersonView.h"
 #import "SelectImgSheet.h"
@@ -61,19 +62,27 @@
     //tableview跳转block
     _mainView.pBlock = ^(NSInteger index) {
         switch (index) {
-            case 0:
+            case 0: //我的信息
                 {
                     
                 }
                 break;
-            case 1:
+            case 1: //修改密码
             {
-                
+                ChangePwVC *cvc = InitObject(ChangePwVC);
+                [weakSelf pushViewController:cvc animated:YES];
             }
                 break;
-            case 2:
+            case 2: //本地数据销毁
             {
-                
+                BOOL del = [PersonDataModel deleteAllData];
+                if (del) {
+                    
+                }
+                else
+                {
+                    
+                }
             }
                 break;
             case 3: //换主题颜色

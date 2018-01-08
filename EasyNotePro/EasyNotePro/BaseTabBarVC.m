@@ -51,7 +51,6 @@
     personVC.tabBarItem.title = @"个人";
     personVC.tabBarItem.image = IMAGEBYENAME(@"main_per");
 //    personVC.tabBarItem.selectedImage = IMAGEBYENAME(@"main_per_ed");
-    personVC.mainView.iconImg.image = [ThemeSelectTool imageWithImageName:@"main_per_ed"];
     personVC.tabBarItem.selectedImage = [[ThemeSelectTool imageWithImageName:@"main_per_ed"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     
     //字体
@@ -64,12 +63,29 @@
     UINavigationController *otNaviVC = [[UINavigationController alloc] initWithRootViewController:otherVC];
     UINavigationController *peNaviVC = [[UINavigationController alloc] initWithRootViewController:personVC];
     
-    acNaviVC.navigationBar.backgroundColor = [ThemeSelectTool themeColor];
+    //设置导航栏颜色
     [acNaviVC.navigationBar setBackgroundImage:[UIImage imageWithColor:[ThemeSelectTool themeColor]] forBarMetrics:UIBarMetricsDefault];
+    [adNaviVC.navigationBar setBackgroundImage:[UIImage imageWithColor:[ThemeSelectTool themeColor]] forBarMetrics:UIBarMetricsDefault];
+    [noNaviVC.navigationBar setBackgroundImage:[UIImage imageWithColor:[ThemeSelectTool themeColor]] forBarMetrics:UIBarMetricsDefault];
+    [otNaviVC.navigationBar setBackgroundImage:[UIImage imageWithColor:[ThemeSelectTool themeColor]] forBarMetrics:UIBarMetricsDefault];
+    [peNaviVC.navigationBar setBackgroundImage:[UIImage imageWithColor:[ThemeSelectTool themeColor]] forBarMetrics:UIBarMetricsDefault];
     
     self.viewControllers = @[acNaviVC,noNaviVC,adNaviVC,otNaviVC,peNaviVC];
+    
+    
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     

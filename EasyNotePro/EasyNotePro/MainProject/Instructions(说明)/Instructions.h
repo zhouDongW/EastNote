@@ -11,6 +11,7 @@
 /*
  本地存储字段说明
  'Theme'        blue/orange/red     界面皮肤主题选择
+ 'screenKey'                        锁屏密码
  
  */
 

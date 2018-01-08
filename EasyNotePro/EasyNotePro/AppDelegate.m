@@ -15,6 +15,7 @@
 //#import "OtherVC.h"
 //#import "PersonVC.h"
 #import "BaseTabBarVC.h"
+#import "UnLockScreen.h"
 
 @interface AppDelegate ()
 
@@ -40,42 +41,21 @@
     self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
     self.window.backgroundColor = [UIColor whiteColor];
     
-    self.window.rootViewController = [[BaseTabBarVC alloc] init];
-//    UITabBarController *tabVC = [[UITabBarController alloc] init];
-//    self.window.rootViewController = tabVC;
-//
-//    AccountVC *accountVC = [[AccountVC alloc] init];
-//    accountVC.tabBarItem.title = @"账号";
-//    accountVC.tabBarItem.image = IMAGEBYENAME(@"main_acc");
-//    accountVC.tabBarItem.selectedImage = IMAGEBYENAME(@"main_acc_ed");
-//
-//    AddInfoVC *addVC = [[AddInfoVC alloc] init];
-//    addVC.tabBarItem.title = @"添加";
-//    addVC.tabBarItem.image = IMAGEBYENAME(@"main_add");
-//    addVC.tabBarItem.selectedImage = IMAGEBYENAME(@"main_add_ed");
-//
-//    NoteVC *noteVC = [[NoteVC alloc] init];
-//    noteVC.tabBarItem.title = @"随记";
-//    noteVC.tabBarItem.image = IMAGEBYENAME(@"main_note");
-//    noteVC.tabBarItem.selectedImage = IMAGEBYENAME(@"main_note_ed");
-//
-//    OtherVC *otherVC = [[OtherVC alloc] init];
-//    otherVC.tabBarItem.title = @"其他";
-//    otherVC.tabBarItem.image = IMAGEBYENAME(@"main_other");
-//    otherVC.tabBarItem.selectedImage = IMAGEBYENAME(@"main_other_ed");
-//
-//    PersonVC *personVC = [[PersonVC alloc] init];
-//    personVC.tabBarItem.title = @"个人";
-//    personVC.tabBarItem.image = IMAGEBYENAME(@"main_per");
-//    personVC.tabBarItem.selectedImage = IMAGEBYENAME(@"main_per_ed");
-//
-//    UINavigationController *acNaviVC = [[UINavigationController alloc] initWithRootViewController:accountVC];
-//    UINavigationController *adNaviVC = [[UINavigationController alloc] initWithRootViewController:addVC];
-//    UINavigationController *noNaviVC = [[UINavigationController alloc] initWithRootViewController:noteVC];
-//    UINavigationController *otNaviVC = [[UINavigationController alloc] initWithRootViewController:otherVC];
-//    UINavigationController *peNaviVC = [[UINavigationController alloc] initWithRootViewController:personVC];
-//
-//    tabVC.viewControllers = @[acNaviVC,noNaviVC,adNaviVC,otNaviVC,peNaviVC];
+
+//    ZSBntview *lock = [[ZSBntview alloc] init];
+//    lock.frame = CGRectMake(0, 0, ScreenWidth, ScreenHeight);
+//    [self.window addSubview:lock];
+    
+    BaseTabBarVC *tabVC = [[BaseTabBarVC alloc] init];
+    self.window.rootViewController = tabVC;
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        UnLockScreen *lock = [[UnLockScreen alloc] init];
+        lock.frame = CGRectMake(0, 0, ScreenWidth, ScreenHeight);
+        [self.window addSubview:lock];
+        [self.window bringSubviewToFront:lock];
+    });
+
     [self.window makeKeyAndVisible];
 
 }
@@ -88,11 +68,21 @@
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    
+    
 }
 
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
     // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
+    
+//    ZSBntview *lock = [[ZSBntview alloc] init];
+//    lock.frame = CGRectMake(0, 0, ScreenWidth, ScreenHeight);
+//    [application.delegate.window addSubview:lock];
+    
+        UnLockScreen *lock = [[UnLockScreen alloc] init];
+        lock.frame = CGRectMake(0, 0, ScreenWidth, ScreenHeight);
+        [self.window addSubview:lock];
 }
 
 

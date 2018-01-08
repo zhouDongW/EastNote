@@ -26,6 +26,8 @@
 
 
 //screctKey
-
+#define baiduKey
+#define bugTagKey
+#define weChatKey
 
 #endif /* SomeValue_h */

@@ -7,8 +7,11 @@
 //
 
 #import "PersonDataModel.h"
+#import "MainDataModel.h"
+
 
 @implementation PersonDataModel
+
 + (void)saveUserIcon:(UIImage *)iconimg
 {
     NSFileManager *fm = [NSFileManager defaultManager];
@@ -27,5 +30,25 @@
     NSData *data = [[NSData alloc] initWithContentsOfFile:path];
     UIImage *img = [[UIImage alloc] initWithData:data scale:1.0];
     return img;
+}
+
++ (BOOL)deleteAllData
+{
+    __block BOOL accountDel = NO;
+    __block BOOL noteDel = NO;
+    __block BOOL perDel = NO;
+    FMDatabaseQueue *queue = [self.class sharedQueue];
+    [queue inDatabase:^(FMDatabase * _Nonnull db) {
+        accountDel = [db executeUpdate:@"delete from AccountTable"];
+        noteDel = [db executeUpdate:@"delete from Notetable"];
+        perDel = [db executeUpdate:@"delete from UserInfo"];
+    }];
+    if (accountDel && noteDel && perDel) {
+        return YES;
+    }
+    else
+    {
+        return NO;
+    }
 }
 @end

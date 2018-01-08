@@ -65,7 +65,7 @@ Strong UITableView *tableView;
 {
     self.scroll = [[UIScrollView alloc] init];
     //self.scroll.frame = CGRectMake(0, 5, ScreenWidth - 10, ScreenHeight - 44 -64);
-    self.scroll.frame = CGRectMake(0, SizeFrom750(505) - 30, ScreenWidth - 10, ScreenHeight - 44 -64);
+    self.scroll.frame = CGRectMake(0, SizeFrom750(505) - 30, ScreenWidth, ScreenHeight - 44 -64);
     self.scroll.contentSize = CGSizeMake(ScreenWidth, ScreenHeight - 44 -64 + SizeFrom750(505) -30);
     self.scroll.userInteractionEnabled = YES;
     self.scroll.showsVerticalScrollIndicator = YES;  //垂直滚动条
@@ -114,6 +114,7 @@ Strong UITableView *tableView;
 //    }
 //    cell.textLabel.text = [cellArr objectAtIndex:indexPath.row];
     PersonCell *cell = [[PersonCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellid];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     
     cell.expLab.text = [cellArr objectAtIndex:indexPath.row];
     cell.iconImg.image = IMAGEBYENAME([cellIconArr objectAtIndex:indexPath.row]);

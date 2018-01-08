@@ -52,7 +52,9 @@ Strong AddNoteView *mainView;
         if (rlt) {
             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"tip" message:@"save succeed" delegate:self cancelButtonTitle:@"sure" otherButtonTitles:nil, nil];
             [alert show];
-            weakSelf.tabBarController.selectedIndex = 1;
+            [weakSelf.navigationController popViewControllerAnimated:YES];
+            //weakSelf.tabBarController.selectedIndex = 1;
+            //用了返回时tabbar隐藏
         }
         else
         {

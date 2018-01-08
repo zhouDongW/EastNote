@@ -59,7 +59,10 @@ Strong AddAccountView *addView;
                 //save succeed
                 UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"tip" message:@"save succed" delegate:self cancelButtonTitle:@"sure" otherButtonTitles:nil, nil];
                 [alert show];
-                weakSelf.tabBarController.selectedIndex = 0;
+                
+                //weakSelf.hidesBottomBarWhenPushed = NO;
+                [weakSelf.navigationController popViewControllerAnimated:YES];
+                //weakSelf.tabBarController.selectedIndex = 0;
             }
             else
             {
@@ -96,9 +99,19 @@ Strong AddAccountView *addView;
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+
+}
 - (void)rightButtonClick:(UIButton *)sender
 {
     [self rightBtnWithText:nil];
@@ -107,5 +120,4 @@ Strong AddAccountView *addView;
     _addView.isCanEdit = isEdit;
     [_addView changeTextFieldEdit];
 }
-
 @end

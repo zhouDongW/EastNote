@@ -34,7 +34,7 @@
 
 - (void)initTableView
 {
-    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight) style:UITableViewStyleGrouped];
+    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight - 44 -64) style:UITableViewStyleGrouped];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     //self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
@@ -73,6 +73,8 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle
                                     reuseIdentifier:cellid];
     }
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    
     AccountTable *model = [[AccountTable alloc] init];
     model = [dataArr objectAtIndex:indexPath.row];
     cell.textLabel.text = model.title;
