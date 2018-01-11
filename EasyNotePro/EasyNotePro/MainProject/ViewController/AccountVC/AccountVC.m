@@ -8,6 +8,7 @@
 
 #import "AccountVC.h"
 #import "AddAccountVC.h"
+#import "AccountSearchVC.h"
 
 #import "AccountView.h"
 
@@ -27,6 +28,7 @@ Strong AccountView *mainView;
     [super viewDidLoad];
     
     self.title = @"账号";
+    [self rightBtnWithText:@"搜索"];
     
     _mainView = [[AccountView alloc] init];
     _mainView.frame = CGRectMake(0, 0, ScreenWidth, ScreenHeight);
@@ -84,12 +86,20 @@ Strong AccountView *mainView;
 //        dbGetArr = [AccountModel getAllAccountData];
 //        [_mainView configAccountView:dbGetArr];
 //    }];
+    NSLog(@"%f",ScreenWidth);
 }
 
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
     
+}
+
+- (void)rightButtonClick:(UIButton *)sender
+{
+    AccountSearchVC *asvc = InitObject(AccountSearchVC);
+    asvc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:asvc animated:YES];
 }
 
 @end

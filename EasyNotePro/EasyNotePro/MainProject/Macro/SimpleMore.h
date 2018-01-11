@@ -28,6 +28,7 @@
 //以6为基准 750*1334
 #define SizeFrom750(x) ((x) * [UIScreen mainScreen].bounds.size.width / 750)
 
+#define NaviStatuBarHight [[UIApplication sharedApplication] statusBarFrame].size.height
 //#define NavHight 64   //X以后不再是20+44
 #define NavHight ([[UIApplication sharedApplication] statusBarFrame].size.height + (44.f))
 

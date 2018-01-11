@@ -27,6 +27,9 @@
 		225450DE1FF39D7E007A3BAD /* p_info@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 225450D61FF39D7E007A3BAD /* p_info@2x.png */; };
 		225450DF1FF39D7E007A3BAD /* p_clear@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 225450D71FF39D7E007A3BAD /* p_clear@2x.png */; };
 		225450E01FF39D7E007A3BAD /* p_other@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 225450D81FF39D7E007A3BAD /* p_other@2x.png */; };
+		2263897420073E2000836CEA /* AccountSearchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2263897320073E2000836CEA /* AccountSearchVC.m */; };
+		2263897720073ED700836CEA /* AccountSearView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2263897620073ED700836CEA /* AccountSearView.m */; };
+		2263897A2007411A00836CEA /* TopSearBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 226389792007411A00836CEA /* TopSearBarView.m */; };
 		227384B01FFB2F3400189A5A /* NoteModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 227384AF1FFB2F3400189A5A /* NoteModel.m */; };
 		227E4A7F1FFDC39900F15B90 /* main_note@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 227E4A7D1FFDC39900F15B90 /* main_note@3x.png */; };
 		227E4A801FFDC39900F15B90 /* main_note@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 227E4A7E1FFDC39900F15B90 /* main_note@2x.png */; };
@@ -139,6 +142,12 @@
 		225450D61FF39D7E007A3BAD /* p_info@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "p_info@2x.png"; sourceTree = "<group>"; };
 		225450D71FF39D7E007A3BAD /* p_clear@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "p_clear@2x.png"; sourceTree = "<group>"; };
 		225450D81FF39D7E007A3BAD /* p_other@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "p_other@2x.png"; sourceTree = "<group>"; };
+		2263897220073E2000836CEA /* AccountSearchVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccountSearchVC.h; sourceTree = "<group>"; };
+		2263897320073E2000836CEA /* AccountSearchVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccountSearchVC.m; sourceTree = "<group>"; };
+		2263897520073ED700836CEA /* AccountSearView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccountSearView.h; sourceTree = "<group>"; };
+		2263897620073ED700836CEA /* AccountSearView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccountSearView.m; sourceTree = "<group>"; };
+		226389782007411A00836CEA /* TopSearBarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TopSearBarView.h; sourceTree = "<group>"; };
+		226389792007411A00836CEA /* TopSearBarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TopSearBarView.m; sourceTree = "<group>"; };
 		227384AE1FFB2F3400189A5A /* NoteModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoteModel.h; sourceTree = "<group>"; };
 		227384AF1FFB2F3400189A5A /* NoteModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NoteModel.m; sourceTree = "<group>"; };
 		227E4A7D1FFDC39900F15B90 /* main_note@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "main_note@3x.png"; sourceTree = "<group>"; };
@@ -153,7 +162,6 @@
 		227E4A8E1FFDC82B00F15B90 /* main_acc@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "main_acc@3x.png"; sourceTree = "<group>"; };
 		227E4A911FFDD07100F15B90 /* orange.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = orange.bundle; sourceTree = "<group>"; };
 		227E4A931FFDDA3500F15B90 /* red.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = red.bundle; sourceTree = "<group>"; };
-		227E4A9B1FFDDAE500F15B90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22AC1B591FFF5DE1009C1DFF /* OtherView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OtherView.h; sourceTree = "<group>"; };
 		22AC1B5A1FFF5DE1009C1DFF /* OtherView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OtherView.m; sourceTree = "<group>"; };
 		22AC1B5E1FFF5F11009C1DFF /* ChangePwVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChangePwVC.h; sourceTree = "<group>"; };
@@ -322,14 +330,6 @@
 			path = NoteModel;
 			sourceTree = "<group>";
 		};
-		227E4A9A1FFDDAE500F15B90 /* red.bundle */ = {
-			isa = PBXGroup;
-			children = (
-				227E4A9B1FFDDAE500F15B90 /* Info.plist */,
-			);
-			path = red.bundle;
-			sourceTree = "<group>";
-		};
 		22AC1B5C1FFF5EEC009C1DFF /* MyInfo */ = {
 			isa = PBXGroup;
 			children = (
@@ -408,7 +408,6 @@
 				22FDD2FF1FEB509A00043B1D /* EasyNotePro */,
 				22FDD3181FEB509B00043B1D /* EasyNoteProTests */,
 				22FDD3231FEB509B00043B1D /* EasyNoteProUITests */,
-				227E4A9A1FFDDAE500F15B90 /* red.bundle */,
 				22FDD2FE1FEB509A00043B1D /* Products */,
 				6F42DC7114EE3E0EFA2DDF13 /* Pods */,
 				6117B188A8C292EE492E2F5A /* Frameworks */,
@@ -626,6 +625,12 @@
 				22FDD36E1FEB98B100043B1D /* AccountView.m */,
 				225394471FECDAAC00A002C0 /* AccountCell.h */,
 				225394481FECDAAC00A002C0 /* AccountCell.m */,
+				2263897220073E2000836CEA /* AccountSearchVC.h */,
+				2263897320073E2000836CEA /* AccountSearchVC.m */,
+				226389782007411A00836CEA /* TopSearBarView.h */,
+				226389792007411A00836CEA /* TopSearBarView.m */,
+				2263897520073ED700836CEA /* AccountSearView.h */,
+				2263897620073ED700836CEA /* AccountSearView.m */,
 			);
 			path = AccountVC;
 			sourceTree = "<group>";
@@ -929,6 +934,7 @@
 				22FDD3631FEB930C00043B1D /* AddInfoVC.m in Sources */,
 				22C6E03E1FFCAFFA00967E9B /* BaseTabBarVC.m in Sources */,
 				225450BC1FF3454F007A3BAD /* SelectImgSheet.m in Sources */,
+				2263897720073ED700836CEA /* AccountSearView.m in Sources */,
 				22F1FCA41FEE048A00D771C9 /* CommonUtils.m in Sources */,
 				22FDD36F1FEB98B100043B1D /* AccountView.m in Sources */,
 				22AC1B601FFF5F11009C1DFF /* ChangePwVC.m in Sources */,
@@ -950,6 +956,8 @@
 				22FDD3551FEB8E9B00043B1D /* DataManager.m in Sources */,
 				221ED8D41FF223F700D9540E /* TextFieldWithBtn.m in Sources */,
 				22FDD3021FEB509A00043B1D /* AppDelegate.m in Sources */,
+				2263897420073E2000836CEA /* AccountSearchVC.m in Sources */,
+				2263897A2007411A00836CEA /* TopSearBarView.m in Sources */,
 				22C1CBBB1FF4850300D01B90 /* TextViewCell.m in Sources */,
 				22C6E03B1FFCA97400967E9B /* ChangeThemeView.m in Sources */,
 				22FDD36C1FEB933D00043B1D /* PersonVC.m in Sources */,

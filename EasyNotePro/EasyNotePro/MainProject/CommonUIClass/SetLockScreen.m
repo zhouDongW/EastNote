@@ -52,14 +52,20 @@ Strong UIButton *sureBtn;
 {
     NSString *getKey = _keyInputTF.text;
     
-    NSUserDefaults *user = [NSUserDefaults standardUserDefaults];
-    [user setObject:getKey forKey:@"screenKey"];
-    [user synchronize];
+    if (![getKey isEqualToString:@""]) {
+        NSUserDefaults *user = [NSUserDefaults standardUserDefaults];
+        [user setObject:getKey forKey:@"screenKey"];
+        [user synchronize];
+        
+        [self hiddenLock];
+    }
+ 
 }
 
 - (void)hiddenLock
 {
     [self removeFromSuperview];
+    
 }
 
 @end

@@ -40,6 +40,7 @@ Strong UIButton *sureBtn;
     _oldPwTF.attributedPlaceholder = attributed;
     _oldPwTF.delegate = self;
     _oldPwTF.keyboardType = UIKeyboardTypeNumberPad;
+    _oldPwTF.secureTextEntry = YES;
     [self addSubview:_oldPwTF];
     
     _newsPwTF = InitObject(UITextField);

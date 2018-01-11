@@ -12,7 +12,12 @@
  本地存储字段说明
  'Theme'        blue/orange/red     界面皮肤主题选择
  'screenKey'                        锁屏密码
- 
+ 'screenGestureKey'                 锁屏手势密码
+ 1 4 7
+ 2 5 8
+ 3 6 9
+ ''
  */
+
 
 #endif /* Instructions_h */

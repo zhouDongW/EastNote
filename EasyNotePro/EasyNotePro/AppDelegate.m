@@ -16,6 +16,7 @@
 //#import "PersonVC.h"
 #import "BaseTabBarVC.h"
 #import "UnLockScreen.h"
+#import "SetLockScreen.h"
 
 @interface AppDelegate ()
 
@@ -50,10 +51,23 @@
     self.window.rootViewController = tabVC;
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        UnLockScreen *lock = [[UnLockScreen alloc] init];
-        lock.frame = CGRectMake(0, 0, ScreenWidth, ScreenHeight);
-        [self.window addSubview:lock];
-        [self.window bringSubviewToFront:lock];
+        
+        NSUserDefaults *user = [NSUserDefaults standardUserDefaults];
+        NSString *locStr = [user objectForKey:@"screenKey"];
+        if (!locStr) {
+            SetLockScreen *slock = [[SetLockScreen alloc] init];
+            slock.frame = CGRectMake(0, 0, ScreenWidth, ScreenHeight);
+            [self.window addSubview:slock];
+            [self.window bringSubviewToFront:slock];
+        }
+        else
+        {
+            UnLockScreen *lock = [[UnLockScreen alloc] init];
+            lock.frame = CGRectMake(0, 0, ScreenWidth, ScreenHeight);
+            [self.window addSubview:lock];
+            [self.window bringSubviewToFront:lock];
+        }
+        
     });
 
     [self.window makeKeyAndVisible];
