@@ -28,13 +28,14 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     [self initTabBarController];
-    
-    
-    
+
+
+
     //配置本地数据库
     [self configSQL];
-    
+
     return YES;
+
 }
 
 - (void)initTabBarController
